@@ -2,11 +2,23 @@
 /* .campersItemContainer {
 
 } */
+
+.campersPageDetailsHeadline {
+margin-bottom: 8px;
+}
+
+.campersPageDetailsRating {
+    margin-bottom: 16px;
+}
+.campersPageDetailsPrice {
+    margin-bottom: 28px;
+}
 .campersPageDetailsList {
     display: flex;
     flex-direction: row;
     gap:43px;
     flex-wrap: wrap;
+    margin-bottom: 28px;
 }
 
 .itemContainerImage {
@@ -31,4 +43,12 @@
     object-fit:cover;
     
    
+}
+
+.campersPageDetailDescription {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: var(--text);
 }

@@ -25,11 +25,15 @@ const descriptionShort = description.slice(0,61)+"..."
       </div>
       <div className={css.itemContainerText}>
         <h2 className={css.campersItemTitle}>{name}</h2>
+        <div className={css.campersItemRating}>
+          
         <CampersRating
         rating={rating}
         reviews ={reviews}
         location ={location}
+        
         />
+        </div>
         {/* <span className={css.campersItemRating}>a {ratingString}</span> */}
         {/* <span>({reviews.length}Rewievs)</span> */}
         {/* <span className={css.campersItemLocation}>{location}</span> */}

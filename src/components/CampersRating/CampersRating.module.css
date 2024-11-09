@@ -1,12 +1,20 @@
 .campersRating {
-    display: inline-block;
-    margin-right: 16px;
-    margin-bottom: 24px;
-    font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-text-decoration: underline;
-text-decoration-skip-ink: none;
-color: var(--main);
+  display: inline-block;
+margin-right: 16px; 
+  /* margin-bottom: 24px; */ 
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--main);
+}
+
+.campersLocation {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--main);
 }

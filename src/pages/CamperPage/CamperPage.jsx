@@ -23,7 +23,7 @@ const CamperPage = () => {
 
   return (
     <>
-      <section className={css.campersPageSection}>
+      <section className={css.camperPageSection}>
         <CamperPageDetails item={item} />
         {/* <link></link> */}
       </section>
