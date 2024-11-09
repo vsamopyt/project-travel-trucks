@@ -1,0 +1,32 @@
+.camperPageFeaturesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    align-content: space-between;
+  padding: 44px 52px;
+  background: var(--inputs);
+}
+
+.camperPageFeaturesList {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.camperPageFeaturesListContainer {
+    height: 204px
+}
+
+.camperPageVehicleContainer {
+  height: 296px;
+}
+
+.camperPageVehicleTitle {
+    margin-bottom: 49px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main);
+}

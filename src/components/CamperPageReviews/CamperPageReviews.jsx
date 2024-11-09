@@ -12,7 +12,7 @@ const CamperPageReviews = () => {
         {reviews.map((item, index) => {
           const { reviewer_name, reviewer_rating, comment } = item;
           return (
-            <li key={index}>
+            <li className={css.camperPageReviewListItem} key={index}>
               <div className={css.camperPageReviewAvatarContainer}>
                 <div className={css.camperPageReviewAwatar}>
                   {reviewer_name[0].toUpperCase()}

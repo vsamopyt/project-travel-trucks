@@ -1,7 +1,12 @@
 .camperPageReviewAvatarContainer {
+    margin-bottom: 16px;
     display: flex;
     align-items: center;
     gap:16px;
+}
+
+.camperPageReviewListItem:not(:last-child) {
+    margin-bottom: 44px;
 }
 
 .camperPageReviewAwatar {

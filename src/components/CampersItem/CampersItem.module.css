@@ -87,6 +87,7 @@ background: var(--button);
     }
 
     .itemContainerText{
+        width:100%;
         position: relative;
     }
 
@@ -94,5 +95,8 @@ background: var(--button);
         position: absolute;
         top:0;
         right: 0;
+        display: flex;
+        gap:12px;
+        
     }
 

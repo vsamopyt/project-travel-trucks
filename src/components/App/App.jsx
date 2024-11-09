@@ -24,10 +24,11 @@ const App = () => {
           <Route path="/catalog" element={<CampersPage />} />
           {/* <Route path="/catalog/:id" element ={<CamperPage/>}/> */}
           <Route path="/catalog/:id" element={<CamperPage />}>
-            <Route path="features" element={<CamperPageFeatures />} />
+            {/* <Route path="features" element={<CamperPageFeatures />} /> */}
+            <Route index element={<CamperPageFeatures />} />
             <Route path="reviews" element={<CamperPageReviews />} />
           </Route>
-          <Route patch="*" element={<NotFoundPage />}></Route>
+          <Route path="*" element={<NotFoundPage />}></Route>
         </Routes>
       </main>
       <footer></footer>
