@@ -1,0 +1,21 @@
+.camperPageContainerAdds {
+display: flex;
+gap:42px;
+}
+
+.camperPageOutlet
+ {
+    width: 631px;
+    height: 588px;
+    border: 1px solid black;
+}
+.camperPageForm {
+    padding-top: 44px;
+    padding-inline: 57px;
+    width: 641px;
+    height: 588px;
+   
+
+    border: 1px solid var(--gray-light);
+border-radius: 10px;
+}

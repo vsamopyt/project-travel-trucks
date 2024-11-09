@@ -1,0 +1,34 @@
+
+/* .campersItemContainer {
+
+} */
+.campersPageDetailsList {
+    display: flex;
+    flex-direction: row;
+    gap:43px;
+    flex-wrap: wrap;
+}
+
+.itemContainerImage {
+    position: relative;
+
+    max-width: 292px;
+    width:100%;
+    height: 312px;
+    border-radius: 10px;
+    /* height: 100%; */
+    overflow: hidden;
+    
+
+}
+
+.itemImg {
+    position: absolute;
+    top:0;
+    left:-140px;
+    width:570px;
+    object-position:center;
+    object-fit:cover;
+    
+   
+}

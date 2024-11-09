@@ -1,0 +1,29 @@
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.navigationLinkLogo {
+    color: red;
+    margin-right: 450px;
+    
+}
+
+.navigationLinks {
+    display: flex;
+    gap:32px;
+}
+
+.link {
+/* color: black; */
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: var(--main);
+}
+
+.linkActive {
+    color:red;
+}

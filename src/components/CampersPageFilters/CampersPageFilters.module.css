@@ -1,0 +1,100 @@
+.filterLocationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filterLocationLabel {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray);
+}
+
+.filterLocationInput {
+  margin-bottom: 40px;
+  border-radius: 12px;
+  padding: 18px 218px 18px 20px;
+  width: 360px;
+  height: 56px;
+  border: none;
+  background: var(--inputs);
+}
+
+.filtersCheckBoxes {
+  display: flex;
+  gap: 12px;
+}
+
+.filterTitle {
+  margin-bottom: 32px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text);
+}
+
+.filterSubtitle {
+  margin-bottom: 48px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main);
+}
+
+.filtersLabels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 112px;
+  height: 96px;
+  text-align: center;
+  border: 1px solid var(--gray-light);
+  border-radius: 12px;
+}
+
+.filterActive {
+  border: apx solid red;
+  background-color: blue;
+}
+
+.filtersContainer {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.filtersLabels {
+  color: black;
+}
+
+.filtersField:checked + .filtersLabels {
+  border: 1px solid var(--button);
+}
+
+.filtersCheckBoxes {
+  margin-bottom: 32px;
+}
+
+.filtersRadioContainer {
+  margin-bottom: 40px;
+}
+
+.filtersButtonSearch {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  border: none;
+  border-radius: 200px;
+  padding: 16px 60px;
+  width: 166px;
+  height: 56px;
+  background: var(--button);
+}

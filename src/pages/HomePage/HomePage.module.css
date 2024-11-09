@@ -1,0 +1,47 @@
+.homePageSection {
+  margin-inline: auto;
+  max-width: 1440px;
+  width: 100%;
+  padding-bottom: 260px;
+  padding-top: 260px;
+  height: 91vh;
+  /* background-image: url("../../../public/image/home-page-background.jpg"); */
+  background-image: url('/image/home-page-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.homePageHeadline {
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67%;
+  color: var(--inputs);
+}
+
+.homePageText {
+  margin-bottom: 40px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--inputs);
+}
+
+.homePageButton {
+  display: block;
+  border-radius: 200px;
+  padding: 16px 50px;
+  width: 173px;
+  height: 56px;
+  background: var(--button);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
