@@ -61,3 +61,8 @@ border: none;
 .camperPageFormButton:hover {
     background: var(--button-hover);
 }
+
+.error {
+    font-size:12px;
+    color:red;
+}

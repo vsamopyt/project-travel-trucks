@@ -2,7 +2,8 @@ import { useId } from 'react';
 import { useDispatch } from 'react-redux';
 import { Formik, Form, Field} from 'formik';
 import {updFilters} from "../../redux/filters/slice"
-import {resetCampers, resetPageFlag } from "../../redux/campers/slice"
+import {resetCampers, resetPageFlag } from "../../redux/campers/slice";
+import GeneralIcon from '../GeneralIcon/GeneralIcon';
 import clsx from 'clsx';
 
 import css from './CampersPageFilters.module.css';
@@ -87,11 +88,16 @@ const CampersPageFilters = () => {
             id={locationId}
             placeholder="Ukraine, Kiev"
           />
+          <GeneralIcon 
+          name ={"Map"} 
+          className={css.filtersLocationIcon}
+          />
         </div>
 
         <p className={css.filterTitle}>Filters</p>
         <p className={css.filterSubtitle}>Vehicle equipment</p>
         <div className={clsx(css.filtersContainer, css.filtersCheckBoxes)}>
+
           <Field
             className={clsx(css.filtersField, css.filtersCheckbox,"visuallyHidden")}
             type="checkbox"
@@ -101,7 +107,10 @@ const CampersPageFilters = () => {
           <label
             className={clsx(css.filtersLabels, css.filtersCneckboxLabels)}
             htmlFor={acId}
-          >
+          > <GeneralIcon 
+          name ={"AC"} 
+          className={css.filtersCneckboxIcons}
+          />
             AC
           </label>
 
@@ -115,7 +124,10 @@ const CampersPageFilters = () => {
           <label
             className={clsx(css.filtersLabels, css.filtersCneckboxLabels)}
             htmlFor={transmissionId}
-          >
+          ><GeneralIcon 
+          name ={"transmission"} 
+          className={css.filtersCneckboxIcons}
+          />
             Automation
           </label>
 
@@ -128,7 +140,10 @@ const CampersPageFilters = () => {
           <label
             className={clsx(css.filtersLabels, css.filtersCneckboxLabels)}
             htmlFor={kitchenId}
-          >
+          ><GeneralIcon 
+          name ={"kitchen"} 
+          className={css.filtersCneckboxIcons}
+          />
             Kitchen
           </label>
 
@@ -142,6 +157,10 @@ const CampersPageFilters = () => {
             className={clsx(css.filtersLabels, css.filtersCneckboxLabels)}
             htmlFor={tvId}
           >
+            <GeneralIcon 
+          name ={"TV"} 
+          className={css.filtersCneckboxIcons}
+          />
             TV
           </label>
 
@@ -155,6 +174,10 @@ const CampersPageFilters = () => {
             className={clsx(css.filtersLabels, css.filtersCneckboxLabels)}
             htmlFor={bathroomId}
           >
+            <GeneralIcon 
+          name ={"bathroom"} 
+          className={css.filtersCneckboxIcons}
+          />
             Bathroom
           </label>
 
@@ -174,6 +197,10 @@ const CampersPageFilters = () => {
             className={clsx(css.filtersLabels, css.filtersRadioLabels)}
             htmlFor={vanId}
           >
+             <GeneralIcon 
+          name ={"panelTruck"} 
+          className={css.filtersCneckboxIcons}
+          />
             Van
           </label>
 
@@ -188,6 +215,10 @@ const CampersPageFilters = () => {
             className={clsx(css.filtersLabels, css.filtersRadioLabels)}
             htmlFor={alcoveId}
           >
+             <GeneralIcon 
+          name ={"alcove"} 
+          className={css.filtersCneckboxIcons}
+          />
             Alcove
           </label>
 
@@ -203,6 +234,10 @@ const CampersPageFilters = () => {
             className={clsx(css.filtersLabels, css.filtersRadioLabels)}
             htmlFor={fullyIntegratedId}
           >
+             <GeneralIcon 
+          name ={"fullyIntegrated"} 
+          className={css.filtersCneckboxIcons}
+          />
             Fully Integrated
           </label>
         </div>

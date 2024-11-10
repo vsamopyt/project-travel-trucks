@@ -1,4 +1,5 @@
 import css from './EquipmentList.module.css';
+import GeneralIcon from "../GeneralIcon/GeneralIcon"
 const EquipmentList = ({ item, equipments }) => {
   const equipmentList = [];
   for (const key in item) {
@@ -12,6 +13,11 @@ const EquipmentList = ({ item, equipments }) => {
       {equipmentList.map((item, index) => {
         return (
           <li className={css.equipmentsItem} key={index}>
+            
+            <GeneralIcon 
+          name ={item.name}
+          className={css.equipmentIcon}
+          />
             {item.value === true ? item.name : item.value}
           </li>
         );

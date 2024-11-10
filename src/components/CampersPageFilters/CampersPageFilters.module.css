@@ -1,4 +1,5 @@
 .filterLocationContainer {
+    position:relative;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -15,7 +16,7 @@
 .filterLocationInput {
   margin-bottom: 40px;
   border-radius: 12px;
-  padding: 18px 218px 18px 20px;
+  padding: 18px 18px 18px 50px;
   width: 360px;
   height: 56px;
   border: none;
@@ -47,6 +48,8 @@
 
 .filtersLabels {
   display: flex;
+  flex-direction: column;
+  gap:8px;
   justify-content: center;
   align-items: center;
 
@@ -102,4 +105,17 @@
 .filtersButtonSearch:hover,
 .filtersButtonSearch:focus {
     background: var(--button-hover);
+}
+
+.filtersCneckboxIcons {
+    width:32px;
+    height:32px;
+}
+
+.filtersLocationIcon {
+    position: absolute;
+    top:50px;
+    left:20px;
+    width:20px;
+    height:20px;
 }

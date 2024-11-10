@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import clsx from "clsx";
 import { FiHeart } from 'react-icons/fi';
+import GeneralIcon from '../GeneralIcon/GeneralIcon';
 import { deleteFavourites, addFavourites } from '../../redux/favourites/slice';
 import CampersPrice from '../CampersPrice/CampersPrice';
 import EquipmentList from '../EquipmentList/EquipmentList';
@@ -48,12 +49,19 @@ const CampersItem = ({ item }) => {
       </div>
       <div className={css.itemContainerText}>
         <h2 className={css.campersItemTitle}>{nameShort(name)}</h2>
+        <div className={css.campersItemIconRatingContainer}>
+
+        <GeneralIcon 
+          name ={"star-pressed"}
+          className={css.itemContainerIcon}
+          />
         <div className={css.campersItemRating}>
           <CampersRating
             rating={rating}
             reviews={reviews}
             location={location}
           />
+        </div>
         </div>
       
         <p className={css.campersItemDescription}>{descriptionShort}</p>

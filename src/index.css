@@ -112,3 +112,10 @@ button:active {
   justify-content: center;
 }
 
+.icons {
+  width:16px;
+  height: 16px;
+  fill: black;
+  stroke: black;
+  color: black;
+}

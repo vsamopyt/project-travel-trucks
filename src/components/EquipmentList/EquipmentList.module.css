@@ -1,16 +1,25 @@
-
-
 .equipmentsItem {
-    border-radius: 100px;
-padding: 12px 18px;
-/* width: 143px; */
-height: 48px;
-background: var(--badges);
-mix-blend-mode: multiply;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--main);
+    display: flex;
+    align-items: center;
+    gap:8px;
+  border-radius: 100px;
+  padding: 12px 18px;
+  /* width: 143px; */
+  height: 48px;
+  background: var(--badges);
+  mix-blend-mode: multiply;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main);
+}
+
+.equipmentIcon {
+  width: 20px;
+  height: 20px;
+  /* fill: black; */
+  /* color: black; */
+  /* stroke: black; */
 }

@@ -3,7 +3,6 @@ import HomePage from '../../pages/HomePage/HomePage';
 import CampersPage from '../../pages/CampersPage/CampersPage';
 import CamperPage from '../../pages/CamperPage/CamperPage';
 import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage';
-// import Navigation from '../navigation/navigation';
 import Navigation from "../Navigation/Navigation.jsx"
 import CamperPageReviews from '../CamperPageReviews/CamperPageReviews';
 import CamperPageFeatures from '../CamperPageFeatures/CamperPageFeatures';
