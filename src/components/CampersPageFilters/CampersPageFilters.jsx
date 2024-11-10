@@ -17,7 +17,26 @@ const CampersPageFilters = () => {
   // const checked = true;
 
   const dispatch  =useDispatch()
-  const handleSubmit =   (values) => {
+  // const handleSubmit =   (values) => {
+  //   const filter = {}
+  //   for (const key in values ){
+  //     if (values[key] ===false || values[key]==="") {
+
+  //       filter[key] = null; 
+  //     }
+  //     else {
+  //       filter[key] = values[key];
+  //     }
+
+  //   }
+  
+  //   dispatch(updFilters(filter))
+  //   dispatch(resetCampers())
+  //   dispatch(resetPageFlag())
+
+	// };
+
+  const handleSubmit =   (values, { setSubmitting }) => {
     const filter = {}
     for (const key in values ){
       if (values[key] ===false || values[key]==="") {
@@ -33,8 +52,7 @@ const CampersPageFilters = () => {
     dispatch(updFilters(filter))
     dispatch(resetCampers())
     dispatch(resetPageFlag())
-
-		// actions.resetForm();
+    setSubmitting(false)
 	};
 
   return (

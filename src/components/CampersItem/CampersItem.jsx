@@ -24,9 +24,9 @@ const CampersItem = ({ item }) => {
   const {favourites} = useSelector(state => state.favourites);
   const descriptionShort = description.slice(0, 61) + '...';
   const isFavourites = favourites.some(item=>item.id === id);
-  console.log(favourites);
+ 
   
-  // const ratingString =`${rating}(${reviews.length} Rewievs)`
+  
   const nameShort = name => {
     return name.length <= 30 ? name : `${name.slice(0, 26)}...`;
   };
@@ -55,10 +55,7 @@ const CampersItem = ({ item }) => {
             location={location}
           />
         </div>
-        {/* <span className={css.campersItemRating}>a {ratingString}</span> */}
-        {/* <span>({reviews.length}Rewievs)</span> */}
-        {/* <span className={css.campersItemLocation}>{location}</span> */}
-        {/* <p>{description}</p> */}
+      
         <p className={css.campersItemDescription}>{descriptionShort}</p>
         <ul className={css.campersItemEquipmentsList}>
           <EquipmentList item={item} equipments={optionList} />
@@ -67,7 +64,7 @@ const CampersItem = ({ item }) => {
         <Link className={css.campersItemButton} to={`/catalog/${id}`}>
           Show more
         </Link>
-        {/* <div to={/catalog/:id}>Show more</div> */}
+      
         <div className={css.campersItemPrice}>
           <span>
             <CampersPrice price={price} />

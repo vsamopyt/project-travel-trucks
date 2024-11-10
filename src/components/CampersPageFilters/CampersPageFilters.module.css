@@ -98,3 +98,8 @@
   height: 56px;
   background: var(--button);
 }
+
+.filtersButtonSearch:hover,
+.filtersButtonSearch:focus {
+    background: var(--button-hover);
+}

@@ -45,3 +45,8 @@
   letter-spacing: -0.01em;
   color: var(--white);
 }
+
+.homePageButton:hover,
+.homePageButton:focus {
+    background: var(--button-hover);
+}

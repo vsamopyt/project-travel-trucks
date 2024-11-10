@@ -86,6 +86,11 @@ color: var(--white);
 background: var(--button);
 
     }
+    
+    .campersItemButton:hover,
+    .campersItemButton:focus {
+        background: var(--button-hover);
+    }
 
     .itemContainerText{
         width:100%;

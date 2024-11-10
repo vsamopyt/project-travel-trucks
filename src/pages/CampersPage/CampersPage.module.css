@@ -41,3 +41,9 @@ width: 145px;
 height: 56px;
 
 }
+
+.campersPageButton:hover,
+.campersPageButton:hover {
+  border: 1px solid var(--button-hover);
+
+}

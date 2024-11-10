@@ -1,6 +1,6 @@
 import { useEffect,} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-
+import { BarLoader } from 'react-spinners';
 import { fetchCampers } from '../../redux/campers/operation';
 import CampersPageFilters from '../../components/CampersPageFilters/CampersPageFilters';
 import { addPage } from '../../redux/filters/slice';
@@ -53,7 +53,7 @@ const CampersPage = () => {
         <div className={`container ${css.campersPageContainer}`}>
           <div className={css.campersPageCatalog}>
             <h1 className={css.visuallyHidden}>Our campers</h1>
-            {isLoading && <b>Loading tasks...</b>}
+            {isLoading && <div className='barloader'><BarLoader/></div>}
             {error && <b>{error}</b>}
             {!error && <CampersList items={items} />}
 

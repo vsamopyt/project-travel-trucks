@@ -35,7 +35,7 @@ const CamperPage = () => {
   return (
     <>
       {isLoading && (
-        <div>
+        <div className='barloader'>
           <BarLoader />
         </div>
       )}
