@@ -84,6 +84,7 @@ line-height: 1.5;
 letter-spacing: -0.01em;
 color: var(--white);
 background: var(--button);
+
     }
 
     .itemContainerText{
@@ -100,3 +101,17 @@ background: var(--button);
         
     }
 
+    .campersPageButtonHeart {
+        display: flex;
+        align-items: center;
+        border:none;
+    }
+    .campersPageIconHeart {
+        width: 25px;
+        height: 24px;
+       /* stroke:red; */
+    }
+    .campersPageIconHeartActive {
+      
+       stroke:red;
+    }
