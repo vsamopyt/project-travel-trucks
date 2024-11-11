@@ -16,10 +16,33 @@
   color: var(--main);
 }
 
-.equipmentIcon {
+/* .equipmentIcon {
   width: 20px;
   height: 20px;
-  /* fill: black; */
-  /* color: black; */
-  /* stroke: black; */
+  stroke: red;
+  fill: black;
+
+} */
+
+
+/* ICONS */
+
+.icon {
+    width:20px;
+    height:20px;
 }
+
+.iconFill {
+    fill: currentColor;
+    stroke: none;
+  }
+  
+  .iconStroke {
+    fill: none;
+    stroke: currentColor;;
+  }
+  
+  .iconBoth {
+    fill: currentColor;;
+    stroke: currentColor;;
+  }

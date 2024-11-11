@@ -10,7 +10,7 @@ gap: 32px;
 border-radius: 20px;
 padding: 24px;
 width: 888px;
-height: 368px;
+min-height: 368px;
 background: var(--white);
 }
 

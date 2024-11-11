@@ -16,6 +16,11 @@ const optionList = [
   'transmission',
   'engine',
   'kitchen',
+  "water",
+  "gas",
+  "radio",
+  "refrigerator",
+  "microwave"
 ];
 
 const CampersItem = ({ item }) => {
@@ -85,6 +90,7 @@ const CampersItem = ({ item }) => {
              
             />
           </button>
+
         </div>
       </div>
     </div>

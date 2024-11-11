@@ -13,8 +13,8 @@ const optionLits = [
   'radio',
   'refrigerator',
   'microwave',
-  ' gas',
-  ' water',
+  'gas',
+  'water',
 ];
 const detailsList = [
   'form',

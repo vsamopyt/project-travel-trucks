@@ -1,0 +1,31 @@
+/* 
+
+.icon-fill {
+    fill: currentColor;
+    stroke: none;
+  }
+  
+  .icon-stroke {
+    fill: none;
+    stroke: currentColor;
+  }
+  
+  .icon-both {
+    fill: currentColor;
+    stroke: currentColor;
+  } */
+
+  .icon-fill {
+    fill: white;
+    stroke: none;
+  }
+  
+  .iconStroke {
+    fill: none;
+    stroke: white;
+  }
+  
+  .icon-both {
+    fill: white;
+    stroke: white;
+  }

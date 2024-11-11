@@ -1,9 +1,7 @@
-// import {useParams} from "react-router-dom"
 import { useOutletContext } from 'react-router-dom';
 import CamperPageStarsRating from '../CamperPageStarsRating/CamperPageStarsRating';
 import css from './CamperPageReviews.module.css';
 const CamperPageReviews = () => {
-  // const { id } = useParams();
   const { reviews } = useOutletContext();
   console.log(reviews);
 
@@ -22,12 +20,14 @@ const CamperPageReviews = () => {
                   <span className={css.camperPageReviewUserName}>
                     {reviewer_name}
                   </span>
-                  <span><CamperPageStarsRating
-                  rating={reviewer_rating}
-                  scale={5}
-                  filledIcon={"star-pressed"}
-                  emptyIcon ={"star-blank"}
-                  /></span>
+                  <span>
+                    <CamperPageStarsRating
+                      rating={reviewer_rating}
+                      scale={5}
+                      filledIcon={'star-pressed'}
+                      emptyIcon={'star-blank'}
+                    />
+                  </span>
                 </div>
               </div>
               <span className={css.camperPageReviewDesc}>{comment}</span>

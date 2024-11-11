@@ -115,7 +115,8 @@ button:active {
 .icons {
   width:16px;
   height: 16px;
-  fill: black;
   stroke: black;
-  color: black;
+  /* fill: black;
+  stroke: black;
+  color: black; */
 }

@@ -119,3 +119,25 @@
     width:20px;
     height:20px;
 }
+
+/* ICONS */
+
+.icon {
+    width:32px;
+    height:32px;
+}
+
+.iconFill {
+    fill: currentColor;
+    stroke: none;
+  }
+  
+  .iconStroke {
+    fill: none;
+    stroke: currentColor;;
+  }
+  
+  .iconBoth {
+    fill: currentColor;;
+    stroke: currentColor;;
+  }
