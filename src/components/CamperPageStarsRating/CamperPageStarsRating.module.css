@@ -1,0 +1,9 @@
+.camperPageStarsRatingList {
+    display: flex;
+
+}
+
+.camperPageStarsRatingIcon {
+    width:16px;
+    height: 16px;
+}

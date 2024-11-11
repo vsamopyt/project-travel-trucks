@@ -1,42 +1,59 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useId } from 'react';
-import * as Yup from "yup";
-import clsx from "clsx";
+import * as Yup from 'yup';
+import clsx from 'clsx';
 import toast, { Toaster } from 'react-hot-toast';
 import css from './CamperPageForm.module.css';
 
 const CamperPageForm = () => {
-    const validationSchema = Yup.object().shape({
-        name: Yup.string().min(3, "Too Short!").max(50, "Too Long!").required("Required"),
-        email: Yup.string().matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "Should be like  test@gmail.com").required("Required"),
-        bookingDate: Yup.string().matches(/^\d{2}\.\d{2}\.\d{4}$/, "Should be like 01.02.2024").required("Required"),
-        comment: Yup.string().max(60, "Too Long!")
-      });
+  const validationSchema = Yup.object().shape({
+    name: Yup.string()
+      .min(3, 'Too Short!')
+      .max(50, 'Too Long!')
+      .required('Required'),
+    email: Yup.string()
+      .matches(
+        /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+        'Should be like  test@gmail.com'
+      )
+      .required('Required'),
+    bookingDate: Yup.string()
+      .matches(/^\d{2}\.\d{2}\.\d{4}$/, 'Should be like 01.02.2024')
+      .required('Required'),
+    comment: Yup.string().max(60, 'Too Long!'),
+  });
 
+  const handleSubmit = (values, actions) => {
+    console.log(values);
+    toast.success('We got your request. Thanks a lot for choice');
+    actions.resetForm();
+  };
 
-      const handleSubmit = (values, actions ) =>{
-        console.log(values);
-        toast.success('We got your request. Thanks a lot for choice');
-        actions.resetForm();
-      };
+  const initialValues = {
+    name: '',
+    email: '',
+    bookingDate: '',
+    comment: '',
+  };
 
-      const initialValues = {
-        name:"",email:"", bookingDate:"", comment:"" 
-      }
-
-      const  nameFieldId = useId();
-      const emailFieldId = useId();
-      const bookingDateFieldId = useId();
-      const commentlFieldId = useId();
+  const nameFieldId = useId();
+  const emailFieldId = useId();
+  const bookingDateFieldId = useId();
+  const commentlFieldId = useId();
 
   return (
     <>
-    <p className={css.camperPageFormHeadline}>Book your campervan now</p>
-    <p className={css.camperPageFormText}>Stay connected! We are always ready to help you.</p>
-    <Formik initialValues={initialValues} onSubmit={handleSubmit} validationSchema={validationSchema}>
-      <Form>
-        {/* <div className={css.camperPageFormContainer}> */}
-<label htmlFor={nameFieldId}></label>
+      <p className={css.camperPageFormHeadline}>Book your campervan now</p>
+      <p className={css.camperPageFormText}>
+        Stay connected! We are always ready to help you.
+      </p>
+      <Formik
+        initialValues={initialValues}
+        onSubmit={handleSubmit}
+        validationSchema={validationSchema}
+      >
+        <Form>
+          <label htmlFor={nameFieldId}></label>
           <Field
             className={css.camperPageFormField}
             name="name"
@@ -44,7 +61,7 @@ const CamperPageForm = () => {
             placeholder="Name"
             id={nameFieldId}
           />
-           <ErrorMessage className={css.error} name="name" component="span" />
+          <ErrorMessage className={css.error} name="name" component="span" />
 
           <label htmlFor={emailFieldId}></label>
           <Field
@@ -54,8 +71,9 @@ const CamperPageForm = () => {
             placeholder="Email"
             id={emailFieldId}
           />
-        <ErrorMessage className={css.error} name="email" component="span" />
-           <label htmlFor={bookingDateFieldId}></label>
+          <ErrorMessage className={css.error} name="email" component="span" />
+          
+          <label htmlFor={bookingDateFieldId}></label>
           <Field
             className={css.camperPageFormField}
             name="bookingDate"
@@ -63,25 +81,34 @@ const CamperPageForm = () => {
             placeholder="Booking date"
             id={bookingDateFieldId}
           />
-           <ErrorMessage className={css.error} name="bookingDate" component="span" />
+          <ErrorMessage
+            className={css.error}
+            name="bookingDate"
+            component="span"
+          />
+
           <label htmlFor={commentlFieldId}></label>
           <Field
-            className={clsx(css.camperPageFormField, css.camperPageFormTextArea)}
+            className={clsx(
+              css.camperPageFormField,
+              css.camperPageFormTextArea
+            )}
             as="textarea"
             name="comment"
             id={commentlFieldId}
             cols="30"
             rows="10"
             placeholder="Comment"
-       
           />
           <ErrorMessage className={css.error} name="comment" component="span" />
-        {/* </div> */}
 
-        <button className={css.camperPageFormButton} type="submit">Send</button>
-      </Form>
-    </Formik>
-    <Toaster />
+
+          <button className={css.camperPageFormButton} type="submit">
+            Send
+          </button>
+        </Form>
+      </Formik>
+      <Toaster />
     </>
   );
 };
