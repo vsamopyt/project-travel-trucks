@@ -83,13 +83,13 @@ button:active {
   padding-bottom: 10px
 } */
 
-.container {
+/* .container {
   max-width: 1440px;
   width:100%;
   padding-inline: 64px;
   margin-inline: auto;
 
-}
+} */
 
 .visuallyHidden {
   position: absolute;
@@ -119,4 +119,34 @@ button:active {
   /* fill: black;
   stroke: black;
   color: black; */
+}
+
+.container {
+  max-width: 320px;
+  width:100%;
+  padding-inline: 15px;
+  margin-inline: auto;
+
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    width:100%;
+    padding-inline: 30px;
+    margin-inline: auto;
+  
+  }
+}
+
+
+@media (min-width: 1440px) {
+
+  .container {
+    max-width: 1440px;
+    width:100%;
+    padding-inline: 64px;
+    margin-inline: auto;
+  
+  }
+  
 }
