@@ -1,3 +1,4 @@
+
 import CampersRating from '../CampersRating/CampersRating';
 import CampersPrice from '../CampersPrice/CampersPrice';
 import css from "./CamperPageDetails.module.css"
@@ -30,6 +31,10 @@ const CamperPageDetails = ({ item }) => {
        
       </ul>
       <p className={css.campersPageDetailDescription}>{description}</p>
+
+
+
+
     </div>
   
   );

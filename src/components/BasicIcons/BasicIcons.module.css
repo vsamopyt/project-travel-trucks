@@ -1,31 +1,21 @@
-/* 
+/* ICONS */
 
-.icon-fill {
-    fill: currentColor;
-    stroke: none;
-  }
-  
-  .icon-stroke {
-    fill: none;
-    stroke: currentColor;
-  }
-  
-  .icon-both {
-    fill: currentColor;
-    stroke: currentColor;
-  } */
+.icon {
+    width:20px;
+    height:20px;
+}
 
-  .icon-fill {
-    fill: white;
+.iconFill {
+    fill: currentColor;
     stroke: none;
   }
   
   .iconStroke {
     fill: none;
-    stroke: white;
+    stroke: currentColor;;
   }
   
-  .icon-both {
-    fill: white;
-    stroke: white;
+  .iconBoth {
+    fill: currentColor;;
+    stroke: currentColor;;
   }

@@ -52,22 +52,3 @@
 }
 
 
-.icon {
-    width:24px;
-    height:26px;
-}
-
-.iconFill {
-    fill: white;
-    stroke: none;
-  }
-  
-  .iconStroke {
-    fill: none;
-    stroke: white;
-  }
-  
-  .iconBoth {
-    fill: white;
-    stroke: white;
-  }

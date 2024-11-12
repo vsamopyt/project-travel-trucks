@@ -8,6 +8,7 @@
   max-width: 292px;
   width: 100%;
   min-height: 320px;
+  /* max-height: 376px; */
   border-radius: 10px;
   /* height: 100%; */
   overflow: hidden;
@@ -16,7 +17,8 @@
 .itemImg {
   position: absolute;
   top: 0;
-  left: -50px;
+  left: -100px;
+  width:180%;
   height:100%
   /* width: 700px; */
   /* object-position: center;

@@ -1,0 +1,48 @@
+.filtersCheckBoxes {
+    display: flex;
+    gap: 12px;
+  }
+
+  .filtersLabels {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    justify-content: center;
+    align-items: center;
+  
+    width: 112px;
+    height: 96px;
+    text-align: center;
+    border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    color: black;
+  }
+
+.filtersField:checked + .filtersLabels {
+  border: 1px solid var(--button);
+}
+
+/* .filtersLabels {
+    color: black;
+  } */
+
+/* ICONS */
+.icon {
+    width:32px;
+    height:32px;
+}
+
+.iconFill {
+    fill: currentColor;
+    stroke: none;
+  }
+  
+  .iconStroke {
+    fill: none;
+    stroke: currentColor;;
+  }
+  
+  .iconBoth {
+    fill: currentColor;;
+    stroke: currentColor;;
+  }
