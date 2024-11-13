@@ -99,6 +99,7 @@ const CamperPageForm = () => {
             cols="30"
             rows="10"
             placeholder="Comment"
+            resize="none"
           />
           <ErrorMessage className={css.error} name="comment" component="span" />
 

@@ -121,20 +121,21 @@ button:active {
   color: black; */
 }
 
-.container {
-  max-width: 320px;
-  width:100%;
-  padding-inline: 15px;
-  margin-inline: auto;
-
-}
 /* .container {
-  max-width: 767px;
+  max-width: 375px;
   width:100%;
   padding-inline: 15px;
   margin-inline: auto;
 
 } */
+
+.container {
+  max-width: 767px;
+  width:100%;
+  padding-inline: 15px;
+  margin-inline: auto;
+
+}
 
 @media (min-width: 768px) {
   .container {

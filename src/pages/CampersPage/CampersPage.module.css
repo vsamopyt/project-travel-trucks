@@ -18,7 +18,8 @@
   }
 
   .campersPageSection {
-    padding-top:24px;
+    /* padding-top:24px; */
+    padding-top: 90px;
     padding-bottom: 24px;
   }
 
@@ -36,7 +37,7 @@
 
 @media (min-width: 1440px) {
   .campersPageSection {
-    padding-top: 48px;
+    padding-top: 108px;
     padding-bottom: 48px;
   }
 

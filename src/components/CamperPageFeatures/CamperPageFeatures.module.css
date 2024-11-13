@@ -1,17 +1,55 @@
+
 .camperPageFeaturesContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   
-    align-content: space-between;
-  padding: 44px 52px;
-  background: var(--inputs);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+  align-content: space-between;
+padding: 24px 18px;
+background: var(--inputs);
 }
 
 .camperPageFeaturesList {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+
+.camperPageFeaturesListContainer {
+  height: auto;
+}
+
+.camperPageVehicleContainer {
+  height: auto;
+}
+
+.camperPageVehicleTitle {
+  margin-bottom: 24px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 120%;
+color: var(--main);
+}
+
+@media (min-width: 1440px) {
+  .camperPageFeaturesContainer {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    align-content: space-between; */
+  padding: 44px 52px;
+  /* background: var(--inputs); */
+}
+
+.camperPageFeaturesList {
+  /* display: flex;
+  gap: 8px;
+  flex-wrap: wrap; */
+  margin-bottom: 0;
 }
 
 .camperPageFeaturesListContainer {
@@ -23,10 +61,14 @@
 }
 
 .camperPageVehicleTitle {
-    margin-bottom: 49px;
-  font-family: var(--font-family);
+   margin-bottom: 49px; 
+  /* font-family: var(--font-family);
   font-weight: 600;
   font-size: 20px;
   line-height: 120%;
-  color: var(--main);
+  color: var(--main);  */
 }
+
+
+}
+
