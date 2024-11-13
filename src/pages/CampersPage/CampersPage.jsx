@@ -52,7 +52,7 @@ const CampersPage = () => {
       <section className={css.campersPageSection}>
         <div className={`container ${css.campersPageContainer}`}>
           <div className={css.campersPageCatalog}>
-            <h1 className={css.visuallyHidden}>Our campers</h1>
+            <h1 className={"visuallyHidden"}>Our campers</h1>
             {isLoading && <div className='barloader'><BarLoader/></div>}
             {error && <b>{error}</b>}
             {!error && <CampersList items={items} />}

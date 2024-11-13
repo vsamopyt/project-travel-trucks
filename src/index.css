@@ -128,6 +128,14 @@ button:active {
   margin-inline: auto;
 
 }
+/* .container {
+  max-width: 767px;
+  width:100%;
+  padding-inline: 15px;
+  margin-inline: auto;
+
+} */
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;

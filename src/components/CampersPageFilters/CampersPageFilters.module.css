@@ -1,5 +1,15 @@
+.filterLocationInput {
+  margin-bottom: 40px;
+  border-radius: 12px;
+  padding: 18px 18px 18px 50px;
+  width: 100%;
+  height: 56px;
+  border: none;
+  background: var(--inputs);
+}
+
 .filterLocationContainer {
-    position:relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -11,16 +21,6 @@
   font-size: 16px;
   line-height: 150%;
   color: var(--gray);
-}
-
-.filterLocationInput {
-  margin-bottom: 40px;
-  border-radius: 12px;
-  padding: 18px 18px 18px 50px;
-  width: 360px;
-  height: 56px;
-  border: none;
-  background: var(--inputs);
 }
 
 .filtersCheckBoxes {
@@ -37,6 +37,7 @@
   color: var(--text);
 }
 
+
 .filterSubtitle {
   margin-bottom: 48px;
   font-family: var(--font-family);
@@ -49,7 +50,7 @@
 .filtersLabels {
   display: flex;
   flex-direction: column;
-  gap:8px;
+  gap: 8px;
   justify-content: center;
   align-items: center;
 
@@ -64,6 +65,7 @@
   border: apx solid red;
   background-color: blue;
 }
+
 
 .filtersContainer {
   display: flex;
@@ -102,42 +104,81 @@
   background: var(--button);
 }
 
-.filtersButtonSearch:hover,
-.filtersButtonSearch:focus {
-    background: var(--button-hover);
-}
-
-.filtersCneckboxIcons {
-    width:32px;
-    height:32px;
-}
-
 .filtersLocationIcon {
-    position: absolute;
-    top:50px;
-    left:20px;
-    width:20px;
-    height:20px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
 }
-
 /* ICONS */
-
+  
 .icon {
-    width:32px;
-    height:32px;
+  width: 32px;
+  height: 32px;
 }
 
 .iconFill {
-    fill: currentColor;
-    stroke: none;
+  fill: currentColor;
+  stroke: none;
+}
+
+.iconStroke {
+  fill: none;
+  stroke: currentColor;
+}
+
+.iconBoth {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+
+
+@media (min-widt:1440px) {
+
+  
+
+  
+  .filterLocationInput {
+    margin-bottom: 40px;
+    border-radius: 12px;
+    padding: 18px 18px 18px 50px;
+    width: 360px;
+    height: 56px;
+    border: none;
+    background: var(--inputs);
   }
   
-  .iconStroke {
-    fill: none;
-    stroke: currentColor;;
+
+
+  
+
+  
+
+
+  
+ 
+
+  
+
+  
+  
+  
+  .filtersButtonSearch:hover,
+  .filtersButtonSearch:focus {
+    background: var(--button-hover);
   }
   
-  .iconBoth {
-    fill: currentColor;;
-    stroke: currentColor;;
+  .filtersCneckboxIcons {
+    width: 32px;
+    height: 32px;
   }
+  
+
+  
+  
+  
+
+}
+

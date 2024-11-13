@@ -54,6 +54,22 @@ const CampersItem = ({ item }) => {
       </div>
       <div className={css.itemContainerText}>
         <h2 className={css.campersItemTitle}>{nameShort(name)}</h2>
+
+        <div className={css.campersItemPrice}>
+          <span>
+            <CampersPrice price={price} />
+          </span>
+
+          <button className={css.campersPageButtonHeart} type="button">
+            <FiHeart
+              className={clsx(css.campersPageIconHeart, isFavourites && css.campersPageIconHeartActive)}
+              onClick={handleFavourites}
+             
+            />
+          </button>
+
+        </div>
+
         <div className={css.campersItemIconRatingContainer}>
 
         <GeneralIcon 
@@ -78,7 +94,7 @@ const CampersItem = ({ item }) => {
           Show more
         </Link>
       
-        <div className={css.campersItemPrice}>
+        {/* <div className={css.campersItemPrice}>
           <span>
             <CampersPrice price={price} />
           </span>
@@ -91,7 +107,7 @@ const CampersItem = ({ item }) => {
             />
           </button>
 
-        </div>
+        </div> */}
       </div>
     </div>
   );
