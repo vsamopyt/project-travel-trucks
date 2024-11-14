@@ -1,39 +1,24 @@
-/* .visuallyHidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  } */
+.campersPageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+}
 
-  .campersPageContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 68px;
-  }
+.campersPageSection {
+  padding-top: 90px;
+  padding-bottom: 24px;
+}
 
-  .campersPageSection {
-    /* padding-top:24px; */
-    padding-top: 90px;
-    padding-bottom: 24px;
-  }
-
-  .campersPageButton {
-    display: block;
-    margin-inline: auto;
-    margin-top: 40px;
-    border: 1px solid var(--gray-light);
-    border-radius: 200px;
-    padding: 16px 32px;
-    width: 145px;
-    height: 56px;
-  }
-
+.campersPageButton {
+  display: block;
+  margin-inline: auto;
+  margin-top: 40px;
+  border: 1px solid var(--gray-light);
+  border-radius: 200px;
+  padding: 16px 32px;
+  width: 145px;
+  height: 56px;
+}
 
 @media (min-width: 1440px) {
   .campersPageSection {
@@ -53,17 +38,6 @@
     width: 100%;
     order: 1;
   }
-
-  /* .campersPageButton {
-    display: block;
-    margin-inline: auto;
-    margin-top: 40px;
-    border: 1px solid var(--gray-light);
-    border-radius: 200px;
-    padding: 16px 32px;
-    width: 145px;
-    height: 56px;
-  } */
 
   .campersPageButton:hover,
   .campersPageButton:hover {

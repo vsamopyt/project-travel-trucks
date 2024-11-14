@@ -31,3 +31,18 @@ export const FilterCheckboxes = [
     "refrigerator",
     "microwave"
   ];
+
+  export const DetailsList = [
+    'form',
+    'width',
+    'length',
+    'height',
+    'tank',
+    'consumption',
+  ];
+
+  export const Icons = {
+    water: 'str',
+    gas: 'str',
+    microwave: "str"
+  };

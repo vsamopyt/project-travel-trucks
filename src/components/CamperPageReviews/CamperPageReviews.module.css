@@ -1,46 +1,46 @@
 .camperPageReviewAvatarContainer {
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap:16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .camperPageReviewListItem:not(:last-child) {
-    margin-bottom: 44px;
+  margin-bottom: 44px;
 }
 
 .camperPageReviewAwatar {
-display: flex;
-justify-content: center;
-align-items: center;
-    border-radius: 60px;
-width: 60px;
-height: 60px;
-font-family: var(--font-family);
-font-weight: 600;
-font-size: 24px;
-line-height: 133%;
-color: var(--button);
-background: var(--badges);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--button);
+  background: var(--badges);
 }
 
 .camperPageReviewUserText {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .camperPageReviewUserName {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: var(--main);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--main);
 }
 
 .camperPageReviewDesc {
-    margin-bottom: 44px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: var(--text);
+  margin-bottom: 44px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text);
 }

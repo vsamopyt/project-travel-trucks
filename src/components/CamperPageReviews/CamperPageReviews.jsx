@@ -1,6 +1,7 @@
 import { useOutletContext } from 'react-router-dom';
 import CamperPageStarsRating from '../CamperPageStarsRating/CamperPageStarsRating';
 import css from './CamperPageReviews.module.css';
+
 const CamperPageReviews = () => {
   const { reviews } = useOutletContext();
   console.log(reviews);

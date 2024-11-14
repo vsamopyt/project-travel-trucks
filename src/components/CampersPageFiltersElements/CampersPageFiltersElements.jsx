@@ -1,8 +1,8 @@
 import { useId } from 'react';
 import clsx from 'clsx';
 import BasicIcons from '../BasicIcons/BasicIcons';
-import css from './CampersPageFiltersElements.module.css';
 import { Field } from 'formik';
+import css from './CampersPageFiltersElements.module.css';
 
 const CampersPageFiltersElements = ({
   listCheckboxes,
@@ -13,7 +13,7 @@ const CampersPageFiltersElements = ({
   classLabelSpecial,
   classHidden,
   classList,
-  classListSpecial
+  classListSpecial,
 }) => {
   const id = useId();
 
@@ -23,32 +23,29 @@ const CampersPageFiltersElements = ({
         {listCheckboxes.map((item, index) => {
           const { name, value } = item;
           let shouldRenderValue = Boolean(value);
-            
 
           return (
-            
-              <li key={index}>
-                <Field
-                  className={clsx(classField, classFieldSpecial, classHidden)}
-                  type={`${type}`}
-                  name={name}
-                  id={id + `-${name}-${index}`}
-                  {...(shouldRenderValue ? { value: value } : {})}
+            <li key={index}>
+              <Field
+                className={clsx(classField, classFieldSpecial, classHidden)}
+                type={`${type}`}
+                name={name}
+                id={id + `-${name}-${index}`}
+                {...(shouldRenderValue ? { value: value } : {})}
+              />
+              <label
+                className={clsx(classLabel, classLabelSpecial)}
+                htmlFor={id + `-${name}-${index}`}
+              >
+                {' '}
+                <BasicIcons
+                  name={type === 'checkbox' ? `${name}` : `${value}`}
+                  classNameSize={css.icon}
+                  clasNameStroke={css.iconStroke}
                 />
-                <label
-                  className={clsx(classLabel, classLabelSpecial)}
-                  htmlFor={id + `-${name}-${index}`}
-                >
-                  {' '}
-                  <BasicIcons
-                    name={type === "checkbox"? `${name}`: `${value}`}
-                    classNameSize={css.icon}
-                    clasNameStroke={css.iconStroke}
-                  />
-                  {type === "checkbox"? name : item.label}
-                </label>
-              </li>
-            
+                {type === 'checkbox' ? name : item.label}
+              </label>
+            </li>
           );
         })}
       </ul>

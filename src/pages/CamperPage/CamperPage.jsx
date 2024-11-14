@@ -1,12 +1,12 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, Outlet, NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
 import { BarLoader } from 'react-spinners';
 import clsx from 'clsx';
 import { fetchCamperById } from '../../redux/campers/operation';
 import CamperPageDetails from '../../components/CamperPageDetails/CamperPageDetails';
 import CamperPageForm from '../../components/CamperPageForm/CamperPageForm';
 import css from './CamperPage.module.css';
-import { useEffect } from 'react';
 
 const CamperPage = () => {
   const { id } = useParams();
@@ -23,19 +23,13 @@ const CamperPage = () => {
     }
   }, [dispatch, id, item]);
 
-  // Показываем статус загрузки, пока данные не загрузились
-  // if (isLoading) {
-  //   return <div><BarLoader/></div>;
-  // }
-
-  // Если элемент отсутствует, показываем сообщение об ошибке
   if (!item || item.id !== id) {
     return <div>Error: Camper not found</div>;
   }
   return (
     <>
       {isLoading && (
-        <div className='barloader'>
+        <div className="barloader">
           <BarLoader />
         </div>
       )}

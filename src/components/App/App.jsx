@@ -3,7 +3,7 @@ import HomePage from '../../pages/HomePage/HomePage';
 import CampersPage from '../../pages/CampersPage/CampersPage';
 import CamperPage from '../../pages/CamperPage/CamperPage';
 import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage';
-import Navigation from "../Navigation/Navigation.jsx"
+import Navigation from "../Navigation/Navigation";
 import CamperPageReviews from '../CamperPageReviews/CamperPageReviews';
 import CamperPageFeatures from '../CamperPageFeatures/CamperPageFeatures';
 
@@ -21,9 +21,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/catalog" element={<CampersPage />} />
-          {/* <Route path="/catalog/:id" element ={<CamperPage/>}/> */}
           <Route path="/catalog/:id" element={<CamperPage />}>
-            {/* <Route path="features" element={<CamperPageFeatures />} /> */}
             <Route index element={<CamperPageFeatures />} />
             <Route path="reviews" element={<CamperPageReviews />} />
           </Route>

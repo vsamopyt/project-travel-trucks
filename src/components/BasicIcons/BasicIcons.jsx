@@ -1,10 +1,5 @@
-const icons = {
-  water: 'str',
-  gas: 'str',
-  microwave: "str"
-};
-
 import clsx from 'clsx';
+import { Icons } from '../../constants/constants';
 
 const BasicIcons = ({
   name,
@@ -16,7 +11,7 @@ const BasicIcons = ({
   clasNameFill,
   classNameBoth,
 }) => {
-  let styleType = icons[name]; 
+  let styleType = Icons[name];
 
   if (!styleType) {
     styleType = 'fll';

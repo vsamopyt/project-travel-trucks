@@ -1,5 +1,6 @@
 import GeneralIcon from '../GeneralIcon/GeneralIcon';
-import css from "./CamperPageStarsRating.module.css"
+import css from './CamperPageStarsRating.module.css';
+
 const CamperPageStarsRating = ({ rating, scale, filledIcon, emptyIcon }) => {
   const ratingArray = new Array(scale).fill('1').map((item, index) => {
     if (index + 1 <= rating) {
@@ -16,12 +17,14 @@ const CamperPageStarsRating = ({ rating, scale, filledIcon, emptyIcon }) => {
         {ratingArray.map((item, index) => {
           return (
             <li key={index}>
-              <GeneralIcon name={item} className={css.camperPageStarsRatingIcon} />
+              <GeneralIcon
+                name={item}
+                className={css.camperPageStarsRatingIcon}
+              />
             </li>
           );
         })}
       </ul>
-    
     </>
   );
 };

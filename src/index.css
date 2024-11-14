@@ -1,16 +1,16 @@
 :root {
-    --main: #101828;
-    --text: #475467;
-    --white: #fff;
-    --inputs: #f7f7f7;
-    --badges: #f2f4f7;
-    --gray: #6c717b;
-    --gray-light: #dadde1;
-    --button: #e44848;
-    --button-hover: #d84343;
-    --rating: #ffc531;
-    --font-family: "Inter", sans-serif;
-    }
+  --main: #101828;
+  --text: #475467;
+  --white: #fff;
+  --inputs: #f7f7f7;
+  --badges: #f2f4f7;
+  --gray: #6c717b;
+  --gray-light: #dadde1;
+  --button: #e44848;
+  --button-hover: #d84343;
+  --rating: #ffc531;
+  --font-family: 'Inter', sans-serif;
+}
 
 /* NORMALIZE */
 *,
@@ -52,8 +52,6 @@ a {
 
 img {
   display: block;
-  /* max-width: 100%;
-  height: auto; */
 }
 
 button {
@@ -72,25 +70,10 @@ button:focus,
 button:active {
   outline: none;
   box-shadow: none;
-  /* background-color: transparent !important; */
   background-color: transparent;
 }
 
-
 /* GENERAL */
-/* section {
-  padding-top: 10px;
-  padding-bottom: 10px
-} */
-
-/* .container {
-  max-width: 1440px;
-  width:100%;
-  padding-inline: 64px;
-  margin-inline: auto;
-
-} */
-
 .visuallyHidden {
   position: absolute;
   width: 1px;
@@ -113,49 +96,32 @@ button:active {
 }
 
 .icons {
-  width:16px;
+  width: 16px;
   height: 16px;
   stroke: black;
-  /* fill: black;
-  stroke: black;
-  color: black; */
 }
-
-/* .container {
-  max-width: 375px;
-  width:100%;
-  padding-inline: 15px;
-  margin-inline: auto;
-
-} */
 
 .container {
   max-width: 767px;
-  width:100%;
+  width: 100%;
   padding-inline: 15px;
   margin-inline: auto;
-
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    width:100%;
+    width: 100%;
     padding-inline: 30px;
     margin-inline: auto;
-  
   }
 }
 
-
 @media (min-width: 1440px) {
-
   .container {
     max-width: 1440px;
-    width:100%;
+    width: 100%;
     padding-inline: 64px;
     margin-inline: auto;
-  
   }
-  
 }

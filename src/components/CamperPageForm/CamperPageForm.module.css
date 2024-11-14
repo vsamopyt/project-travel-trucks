@@ -1,5 +1,5 @@
 .camperPageFormSection {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .camperPageFormField {
@@ -9,9 +9,7 @@
   padding: 18px 18px 18px 18px;
   border: none;
   height: 60px;
-  /* margin-bottom: 14px; */
   margin-top: 14px;
-  /* width: 527px; */
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -34,14 +32,12 @@
 }
 
 .camperPageFormText {
-/* margin-top: 24px;  */
   margin-bottom: 24px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: var(--gray);
-  
 }
 
 .camperPageFormButton {
@@ -72,8 +68,8 @@
   color: red;
 }
 
-@media (min-width:1440px){
-    .camperPageFormSection {
-        padding-bottom: 0;
-    }
+@media (min-width: 1440px) {
+  .camperPageFormSection {
+    padding-bottom: 0;
+  }
 }

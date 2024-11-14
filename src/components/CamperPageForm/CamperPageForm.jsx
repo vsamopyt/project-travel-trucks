@@ -17,9 +17,6 @@ const CamperPageForm = () => {
         'Should be like  test@gmail.com'
       )
       .required('Required'),
-    // bookingDate: Yup.string()
-    //   .matches(/^\d{2}\.\d{2}\.\d{4}$/, 'Should be like 01.02.2024')
-    //   .required('Required'),
       bookingDate: Yup.date().required('Required'),
     comment: Yup.string().max(60, 'Too Long!'),
   });
@@ -103,8 +100,6 @@ const CamperPageForm = () => {
             resize="none"
           />
           <ErrorMessage className={css.error} name="comment" component="span" />
-
-
           <button className={css.camperPageFormButton} type="submit">
             Send
           </button>

@@ -1,27 +1,12 @@
-import { useEffect,} from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { BarLoader } from 'react-spinners';
 import { fetchCampers } from '../../redux/campers/operation';
 import CampersPageFilters from '../../components/CampersPageFilters/CampersPageFilters';
 import { addPage } from '../../redux/filters/slice';
-import {setPageFlag } from '../../redux/campers/slice';
-
+import { setPageFlag } from '../../redux/campers/slice';
 import CampersList from '../../components/CampersList/CampersList';
-
 import css from './CampersPage.module.css';
-
-// const reqParams = {
-//   // location: "Ukraine, Dnipro",
-//   location: '',
-//   AC: true,
-//   transmission: null,
-//   kitchen: true,
-//   bathroom: true,
-//   // TV:true,
-//   form: 'alcove',
-//   limit: 4,
-//   page: 1,
-// };
 
 const CampersPage = () => {
   let { items, isLoading, error, count } = useSelector(state => state.campers);
@@ -35,13 +20,10 @@ const CampersPage = () => {
     if (page < pages) {
       page += 1;
     }
-    console.log(page);
-
+   
     dispatch(addPage(page));
     dispatch(setPageFlag(page));
   };
-
-
 
   useEffect(() => {
     dispatch(fetchCampers({ ...filter, limit, page }));
@@ -52,8 +34,12 @@ const CampersPage = () => {
       <section className={css.campersPageSection}>
         <div className={`container ${css.campersPageContainer}`}>
           <div className={css.campersPageCatalog}>
-            <h1 className={"visuallyHidden"}>Our campers</h1>
-            {isLoading && <div className='barloader'><BarLoader/></div>}
+            <h1 className={'visuallyHidden'}>Our campers</h1>
+            {isLoading && (
+              <div className="barloader">
+                <BarLoader />
+              </div>
+            )}
             {error && <b>{error}</b>}
             {!error && <CampersList items={items} />}
 

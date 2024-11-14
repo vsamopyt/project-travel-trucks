@@ -1,4 +1,5 @@
 import css from './CamperPageDetailsVehicle.module.css';
+
 const CamperPageDetailsVehicle = ({ item, equipments }) => {
   const equipmentList = [];
   for (const key in item) {
@@ -9,17 +10,16 @@ const CamperPageDetailsVehicle = ({ item, equipments }) => {
 
   return (
     <>
-    <ul className={css.camperPageDetailsVehicleList}>
-      {equipmentList.map((item, index) => {
-        return (
-          <li className={css.camperPageDetailsVehicleItem} key={index}>
-            {/* {item.value === true ? item.name : item.value} */}
-            <span>{item.name}</span>
-            <span>{item.value}</span>
-          </li>
-        );
-      })}
-    </ul>
+      <ul className={css.camperPageDetailsVehicleList}>
+        {equipmentList.map((item, index) => {
+          return (
+            <li className={css.camperPageDetailsVehicleItem} key={index}>
+              <span>{item.name}</span>
+              <span>{item.value}</span>
+            </li>
+          );
+        })}
+      </ul>
     </>
   );
 };

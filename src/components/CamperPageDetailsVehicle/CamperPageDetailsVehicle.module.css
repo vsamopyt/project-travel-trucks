@@ -1,22 +1,18 @@
-.campersPageDetailListList {
-   
-}
-
 .camperPageDetailsVehicleItem {
-    display: flex;
-    justify-content: space-between;
-    font-family: var(--font-family);
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-text-align: center;
-color: var(--main);
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main);
 }
 
 .camperPageDetailsVehicleItem:not(:last-child) {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .camperPageVehicleContainer {
-height: 588px;
+  height: 588px;
 }
