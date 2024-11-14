@@ -5,7 +5,7 @@ const CampersPrice =({price})=>{
     //     currency: "EUR",
     //     minimumFractionDigits: 2
     //   });
-    const formattedPrice =`€${price}.00`
+    const formattedPrice =`€${price.toFixed(2)}`
       return (
         <>
         <span className={css.campersPrice}>{formattedPrice}</span>

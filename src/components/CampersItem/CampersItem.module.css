@@ -37,7 +37,7 @@ height: 100%;
 }
 
 .campersItemTitle {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
@@ -53,17 +53,21 @@ height: 100%;
   display: flex;
   /* gap: 12px; */
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 
 .campersItemDescription {
   margin-bottom: 24px;
+  padding-right: 24px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text);
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 
 /* .campersItemEquipmentsList {
@@ -165,12 +169,8 @@ height: 100%;
   
   
   .campersItemDescription {
-    /* margin-bottom: 24px; */
-    /* font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: var(--text); */
+  width:464px;
+  padding-right:0;
   }
   
   .campersItemEquipmentsList {

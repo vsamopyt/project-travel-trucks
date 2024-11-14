@@ -28,6 +28,7 @@
 
 .camperPageLink {
   padding-bottom: 20px;
+  color: var(--main);
 }
 
 .camperPageLinkActive {

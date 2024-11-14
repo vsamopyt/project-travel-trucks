@@ -6,7 +6,8 @@
     padding-bottom: 300px;
     /* padding-top: 220px; */
      padding-top: 320px;
-    height: 91vh;
+    /* height: 91vh; */
+ height: 100vh;
     background-image: url('/image/home-page-background.jpg');
     background-repeat: no-repeat;
     background-position: center top;
@@ -54,9 +55,9 @@
         margin-inline: auto;
         max-width: 1440px;
         width: 100%;
-        padding-bottom: 260px;
+        padding-bottom: 300px;
         padding-top: 320px;
-        height: 91vh;
+        height: 100vh;
         background-image: url('/image/home-page-background.jpg');
         background-repeat: no-repeat;
         background-position: center top;

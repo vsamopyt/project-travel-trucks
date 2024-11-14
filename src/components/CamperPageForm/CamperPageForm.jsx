@@ -13,13 +13,14 @@ const CamperPageForm = () => {
       .required('Required'),
     email: Yup.string()
       .matches(
-        /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+        /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
         'Should be like  test@gmail.com'
       )
       .required('Required'),
-    bookingDate: Yup.string()
-      .matches(/^\d{2}\.\d{2}\.\d{4}$/, 'Should be like 01.02.2024')
-      .required('Required'),
+    // bookingDate: Yup.string()
+    //   .matches(/^\d{2}\.\d{2}\.\d{4}$/, 'Should be like 01.02.2024')
+    //   .required('Required'),
+      bookingDate: Yup.date().required('Required'),
     comment: Yup.string().max(60, 'Too Long!'),
   });
 
@@ -42,14 +43,14 @@ const CamperPageForm = () => {
   const commentlFieldId = useId();
 
   return (
-    <>
+    <section className={css.camperPageFormSection}>
       <p className={css.camperPageFormHeadline}>Book your campervan now</p>
       <p className={css.camperPageFormText}>
         Stay connected! We are always ready to help you.
       </p>
       <Formik
         initialValues={initialValues}
-        onSubmit={handleSubmit}
+        onSubmit={handleSubmit}camperPageFormSection
         validationSchema={validationSchema}
       >
         <Form>
@@ -77,7 +78,7 @@ const CamperPageForm = () => {
           <Field
             className={css.camperPageFormField}
             name="bookingDate"
-            type="text"
+            type="date"
             placeholder="Booking date"
             id={bookingDateFieldId}
           />
@@ -110,7 +111,7 @@ const CamperPageForm = () => {
         </Form>
       </Formik>
       <Toaster />
-    </>
+    </section>
   );
 };
 export default CamperPageForm;

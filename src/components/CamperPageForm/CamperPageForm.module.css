@@ -1,3 +1,7 @@
+.camperPageFormSection {
+    padding-bottom: 40px;
+}
+
 .camperPageFormField {
   display: block;
   width: 100%;
@@ -66,4 +70,10 @@
 .error {
   font-size: 12px;
   color: red;
+}
+
+@media (min-width:1440px){
+    .camperPageFormSection {
+        padding-bottom: 0;
+    }
 }

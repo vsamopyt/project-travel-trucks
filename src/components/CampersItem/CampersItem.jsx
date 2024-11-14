@@ -55,6 +55,36 @@ const CampersItem = ({ item }) => {
       <div className={css.itemContainerText}>
         <h2 className={css.campersItemTitle}>{nameShort(name)}</h2>
 
+        {/* <div className={css.campersItemPrice}>
+          <span>
+            <CampersPrice price={price} />
+          </span>
+
+          <button className={css.campersPageButtonHeart} type="button">
+            <FiHeart
+              className={clsx(css.campersPageIconHeart, isFavourites && css.campersPageIconHeartActive)}
+              onClick={handleFavourites}
+             
+            />
+          </button>
+
+        </div> */}
+
+        <div className={css.campersItemIconRatingContainer}>
+
+        {/* <GeneralIcon 
+          name ={"star-pressed"}
+          className={css.itemContainerIcon}
+          /> */}
+        <div className={css.campersItemRating}>
+          <CampersRating
+            rating={rating}
+            reviews={reviews}
+            location={location}
+          />
+        </div>
+        </div>
+
         <div className={css.campersItemPrice}>
           <span>
             <CampersPrice price={price} />
@@ -69,23 +99,8 @@ const CampersItem = ({ item }) => {
           </button>
 
         </div>
-
-        <div className={css.campersItemIconRatingContainer}>
-
-        <GeneralIcon 
-          name ={"star-pressed"}
-          className={css.itemContainerIcon}
-          />
-        <div className={css.campersItemRating}>
-          <CampersRating
-            rating={rating}
-            reviews={reviews}
-            location={location}
-          />
-        </div>
-        </div>
       
-        <p className={css.campersItemDescription}>{descriptionShort}</p>
+        <p className={css.campersItemDescription}>{description}</p>
         <ul className={css.campersItemEquipmentsList}>
           <EquipmentList item={item} equipments={optionList} />
         </ul>

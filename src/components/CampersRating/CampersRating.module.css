@@ -1,6 +1,16 @@
+.campersRatingContainer {
+  display: flex;
+  flex-direction: row;
+  gap:8px;
+  flex-wrap: wrap;
+}
+
+
 .campersRating {
   display: inline-block;
+  flex-wrap: nowrap;
 margin-right: 16px; 
+margin-left: 4px;
   /* margin-bottom: 24px; */ 
   font-family: var(--font-family);
   font-weight: 400;
@@ -11,10 +21,29 @@ margin-right: 16px;
   color: var(--main);
 }
 
+.campersRatingContainerIcon {
+  display: flex;
+  align-items: center;
+  
+}
+
+.campersRatingLocationIcon {
+  margin-right: 4px;
+}
 .campersLocation {
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: var(--main);
+}
+
+@media (min-width=1440px) {
+  .campersRatingContainer {
+    gap:16px;
+  }
 }
