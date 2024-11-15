@@ -102,10 +102,15 @@ button:active {
 }
 
 .container {
+  max-width: 320px;
   max-width: 767px;
   width: 100%;
   padding-inline: 15px;
   margin-inline: auto;
+}
+
+body {
+  font-family: var(--font-family);
 }
 
 @media (min-width: 768px) {

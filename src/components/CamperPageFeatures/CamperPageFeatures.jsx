@@ -6,6 +6,7 @@ import css from './CamperPageFeatures.module.css';
 
 const CamperPageFeatures = () => {
   const item = useOutletContext();
+console.log(DetailsList);
 
   return (
     <div className={css.camperPageFeaturesContainer}>

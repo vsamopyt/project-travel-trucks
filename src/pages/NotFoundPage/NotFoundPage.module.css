@@ -1,0 +1,27 @@
+.notFoundPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.notFoundPageError {
+    font-size: 160px;
+}
+
+.pageNotFoundHeadline {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  
+}
+
+.notFoundPageLink {
+    color:blue;
+    margin-left: 6px;
+}
+
+.notFoundPageTextContainer {
+    display: flex;
+    
+}

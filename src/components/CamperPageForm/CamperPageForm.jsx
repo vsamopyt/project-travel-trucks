@@ -56,7 +56,7 @@ const CamperPageForm = () => {
             className={css.camperPageFormField}
             name="name"
             type="text"
-            placeholder="Name"
+            placeholder="Name*"
             id={nameFieldId}
           />
           <ErrorMessage className={css.error} name="name" component="span" />
@@ -66,7 +66,7 @@ const CamperPageForm = () => {
             className={css.camperPageFormField}
             name="email"
             type="text"
-            placeholder="Email"
+            placeholder="Email*"
             id={emailFieldId}
           />
           <ErrorMessage className={css.error} name="email" component="span" />
@@ -76,7 +76,7 @@ const CamperPageForm = () => {
             className={css.camperPageFormField}
             name="bookingDate"
             type="date"
-            placeholder="Booking date"
+            placeholder="Booking date*"
             id={bookingDateFieldId}
           />
           <ErrorMessage
