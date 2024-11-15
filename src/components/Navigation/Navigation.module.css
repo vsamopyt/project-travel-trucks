@@ -18,11 +18,23 @@
 .navigationLinks {
   display: flex;
   gap: 32px;
+  transition: color 0.3s ease;
+}
+
+.link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main);
+  transition: color 0.3s ease;
 }
 
 .linkActive {
-  color: red;
+  color: var(--button-hover);
 }
+
 
 @media (min-width: 1440px) {
   .navigation {
@@ -40,17 +52,14 @@
     gap: 32px;
   }
 
-  .link {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--main);
+ .link:hover,
+ .link:focus  {
+    color: var(--button-hover); ;
   }
+  
 
   .linkActive {
-    color: red;
+    color: var(--button-hover);
   }
 
   .navigationIcon {

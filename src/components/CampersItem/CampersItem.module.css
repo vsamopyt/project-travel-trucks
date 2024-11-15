@@ -80,7 +80,8 @@
   line-height: 1.5;
   letter-spacing: -0.01em;
   color: var(--white);
-  background: var(--button);
+  background-color: var(--button);
+  transition: background-color 0.3s ease;
 }
 
 .campersPageButtonHeart {
@@ -91,10 +92,11 @@
 .campersPageIconHeart {
   width: 25px;
   height: 24px;
+  transition: stroke 0.3s ease;
 }
 
 .campersPageIconHeartActive {
-  stroke: red;
+  stroke: var(--button-hover);
 }
 
 @media (min-width: 1440px) {
@@ -128,7 +130,7 @@
 
   .campersItemButton:hover,
   .campersItemButton:focus {
-    background: var(--button-hover);
+    background-color: var(--button-hover);
   }
 
   .itemContainerText {
@@ -147,4 +149,9 @@
   .campersItemIconRatingContainer {
     margin-bottom: 24px;
   }
+
+  .campersPageButtonHeart:hover .campersPageIconHeart {
+    stroke: var(--button-hover);
+  }
+
 }

@@ -85,6 +85,7 @@
 
 .filtersLabels {
   color: black;
+  transition: border 0.3 ease;
 }
 
 .filtersField:checked + .filtersLabels {
@@ -112,6 +113,7 @@
   width: 166px;
   height: 56px;
   background: var(--button);
+  transition: background-color 0.3s ease;
 }
 
 .filtersLocationIcon {
@@ -170,5 +172,10 @@ top: 50%;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+
+  .filtersLabels:hover,
+  .filtersLabels:focus {
+    border: 1px solid var(--button);
   }
 }

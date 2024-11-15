@@ -84,17 +84,19 @@
     padding: 16px 50px;
     width: 173px;
     height: 56px;
-    background: var(--button);
+    background-color: var(--button);
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.01em;
     color: var(--white);
+    border: none;
+    transition:  background-color 0.3s ease;
   }
 
   .homePageButton:hover,
   .homePageButton:focus {
-    background: var(--button-hover);
+    background-color: var(--button-hover);
   }
 }

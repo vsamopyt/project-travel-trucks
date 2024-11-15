@@ -48,7 +48,7 @@
   padding: 16px 60px;
   width: 166px;
   height: 56px;
-  background: var(--button);
+  background-color: var(--button);
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
@@ -56,11 +56,12 @@
   letter-spacing: -0.01em;
   color: var(--white);
   border: none;
+  transition: background-color 0.3s ease;
 }
 
 .camperPageFormButton:hover,
 .camperPageFormButton:hover {
-  background: var(--button-hover);
+  background-color: var(--button-hover);
 }
 
 .error {

@@ -18,6 +18,7 @@
   padding: 16px 32px;
   width: 145px;
   height: 56px;
+  transition:  border 0.3s ease;
 }
 
 @media (min-width: 1440px) {
