@@ -10,7 +10,7 @@ const CamperPageStarsRating = ({ rating, scale, filledIcon, emptyIcon }) => {
     }
     return item;
   });
-  console.log(ratingArray);
+
   return (
     <>
       <ul className={css.camperPageStarsRatingList}>

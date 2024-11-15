@@ -22,7 +22,7 @@ const CamperPageForm = () => {
   });
 
   const handleSubmit = (values, actions) => {
-    console.log(values);
+   
     toast.success('We got your request. Thanks a lot for choice');
     actions.resetForm();
   };

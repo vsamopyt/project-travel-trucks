@@ -36,14 +36,21 @@ const campersSlice = createSlice({
         state.isLoading = false;
         state.error = null;
 
-        if (state.pageFlag === 1) {
-          state.items = action.payload.items;
-        } else if (
-          state.items.length < state.pageFlag * 4 &&
-          state.items.length < state.count
-        ) {
-          state.items = [...state.items, ...action.payload.items];
-        }
+        // if (state.pageFlag === 1) {
+        //   state.items = action.payload.items;
+        // } else if (
+        //   state.items.length < state.pageFlag * 4 &&
+        //   state.items.length < state.count
+        // ) {
+        //   state.items = [...state.items, ...action.payload.items];
+        // }
+
+        const result = action.payload.items.filter(
+          newItem =>
+            !state.items.some(currentItem => currentItem.id === newItem.id)
+        );
+
+        state.items = [...state.items, ...result];
 
         state.count = action.payload.total;
       })

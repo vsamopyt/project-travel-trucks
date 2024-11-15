@@ -28,6 +28,7 @@
 .camperPageLink {
   padding-bottom: 20px;
   color: var(--main);
+  transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 .camperPageLinkActive {
@@ -86,5 +87,10 @@
     top: 97%;
     left: 0;
     background-color: var(--gray-light);
+  }
+
+  .camperPageLink:hover,
+  .camperPageLink:focus {
+    color: var(--button)
   }
 }

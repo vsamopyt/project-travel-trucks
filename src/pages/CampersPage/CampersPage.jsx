@@ -6,6 +6,7 @@ import CampersPageFilters from '../../components/CampersPageFilters/CampersPageF
 import { addPage } from '../../redux/filters/slice';
 import { setPageFlag } from '../../redux/campers/slice';
 import CampersList from '../../components/CampersList/CampersList';
+import toast, { Toaster } from 'react-hot-toast';
 import css from './CampersPage.module.css';
 
 const CampersPage = () => {
@@ -25,9 +26,15 @@ const CampersPage = () => {
     dispatch(setPageFlag(page));
   };
 
+
+ 
   useEffect(() => {
     dispatch(fetchCampers({ ...filter, limit, page }));
-  }, [dispatch, filter, limit, page]);
+    if (pages === page ) {
+        toast.success('We got to the end of collection!');
+      }
+  }, [dispatch, filter, limit, page, pages]);
+
 
   return (
     <>
@@ -41,7 +48,7 @@ const CampersPage = () => {
               </div>
             )}
             {error && <b>{error}</b>}
-            {!error && <CampersList items={items} />}
+            {!error &&  !isLoading &&<CampersList items={items} />}
 
             {pages > page ? (
               <button
@@ -52,8 +59,9 @@ const CampersPage = () => {
                 Load More
               </button>
             ) : (
-              <></>
+              <>{null}</>
             )}
+         
           </div>
 
           <aside className={css.campersPageAside}>
@@ -61,6 +69,7 @@ const CampersPage = () => {
           </aside>
         </div>
       </section>
+      <Toaster/>
     </>
   );
 };

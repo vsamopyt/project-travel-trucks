@@ -4,7 +4,6 @@ import css from './CamperPageReviews.module.css';
 
 const CamperPageReviews = () => {
   const { reviews } = useOutletContext();
-  console.log(reviews);
 
   return (
     <>
