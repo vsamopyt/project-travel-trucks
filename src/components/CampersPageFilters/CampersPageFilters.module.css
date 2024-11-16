@@ -86,6 +86,7 @@
 .filtersLabels {
   color: black;
   transition: border 0.3 ease;
+  cursor: pointer;
 }
 
 .filtersField:checked + .filtersLabels {
