@@ -1,6 +1,6 @@
 import CampersPageFiltersElements from '../CampersPageFiltersElements/CampersPageFiltersElements';
 import { useId } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Formik, Form, Field } from 'formik';
 import { updFilters } from '../../redux/filters/slice';
 import { resetCampers, resetPageFlag } from '../../redux/campers/slice';
@@ -12,12 +12,23 @@ import css from './CampersPageFilters.module.css';
 const CampersPageFilters = () => {
   const locationId = useId();
   const dispatch = useDispatch();
+  const reduxFilterValue = useSelector(state => state.filters.filter);
 
   const handleSubmit = (values, { setSubmitting }) => {
     const filter = {};
+    // for (const key in values) {
+    //   if (values[key] === false || values[key] === '') {
+    //     filter[key] = null;
+    //     // filter[key] = "";
+    //   } else {
+    //     filter[key] = values[key];
+    //   }
+    // }
+
     for (const key in values) {
-      if (values[key] === false || values[key] === '') {
-        filter[key] = null;
+      if (values[key] === false ) {
+       
+        filter[key] = "";
       } else {
         filter[key] = values[key];
       }
@@ -30,23 +41,7 @@ const CampersPageFilters = () => {
   };
 
   return (
-    <Formik
-      initialValues={{
-        location: '',
-        AC: false,
-        transmission: '',
-        kitchen: false,
-        TV: false,
-        bathroom: false,
-        water: false,
-        gas: false,
-        radio: false,
-        refrigerator: false,
-        microwave: false,
-        form: '',
-      }}
-      onSubmit={handleSubmit}
-    >
+    <Formik initialValues={reduxFilterValue} onSubmit={handleSubmit}>
       <Form>
         <div className={css.filterLocationContainer}>
           <label className={css.filterLocationLabel} htmlFor={locationId}>
@@ -78,7 +73,6 @@ const CampersPageFilters = () => {
         />
 
         <p className={css.filterSubtitle}> Vehicle type</p>
-
         <CampersPageFiltersElements
           listCheckboxes={FilterRadioForm}
           type={'radio'}

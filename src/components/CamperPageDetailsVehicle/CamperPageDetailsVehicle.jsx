@@ -1,14 +1,13 @@
 import css from './CamperPageDetailsVehicle.module.css';
 
-const CamperPageDetailsVehicle = ({ item, equipments }) => {
+const CamperPageDetailsVehicle = ({item, equipments}) => {
   const equipmentList = [];
 
   for (const key in item) {
     if (item[key] && equipments.includes(key)) {
       const value = item[key];
-
       if (Number.isNaN(parseFloat(value)) || value.includes('/')) {
-        equipmentList.push({ name: key, value: value });
+        equipmentList.push({name: key, value: value});
       } else {
         equipmentList.push({
           name: key,

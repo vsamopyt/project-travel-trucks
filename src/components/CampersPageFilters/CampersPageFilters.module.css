@@ -63,7 +63,6 @@
   gap: 8px;
   justify-content: center;
   align-items: center;
-
   width: 112px;
   height: 96px;
   text-align: center;
@@ -119,9 +118,9 @@
 
 .filtersLocationIcon {
   position: absolute;
-top: 50%;
+top: 47%;
   left: 20px;
-  transform: translate(0, -50%);
+  transform: translate(0, -47%);
   width: 20px;
   height: 20px;
 }
