@@ -89,8 +89,7 @@
     background-color: var(--gray-light);
   }
 
-  .camperPageLink:hover,
-  .camperPageLink:focus {
+  .camperPageLink:hover   {
     color: var(--button)
   }
 }

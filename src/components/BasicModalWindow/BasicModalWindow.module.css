@@ -1,0 +1,62 @@
+.ReactModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 254, 254, 0.951);
+  overflow: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModalOverlayAfterOpen {
+  opacity: 1;
+}
+
+.ReactModalOverlayBeforeClose {
+  opacity: 0;
+}
+
+.ReactModalContent {
+  position: relative;
+  max-width: 1105px;
+  width: 100%;
+  height: auto;
+  padding: 40px 30px 30px 30px;
+  border: 1px solid rgb(196, 193, 193);
+  border-radius: 20px;
+  overflow: auto;
+  transform: translateY(50px);
+  transition: transform 300ms ease;
+}
+
+.ReactModalContentAfterOpen {
+  transform: translateY(0);
+}
+
+.ReactModalContentBeforeClose {
+  transform: translateY(50px);
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: black;
+  border: 1px solid grey;
+  border-radius: 50%;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.modalCloseBtn:hover,
+.modalCloseBtn:hover {
+  color: red;
+  border-color: red;
+}
+

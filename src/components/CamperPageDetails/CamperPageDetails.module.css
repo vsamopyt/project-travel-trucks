@@ -27,6 +27,7 @@
 .itemImg {
   width: 100%;
   height: auto;
+  
 }
 
 .campersPageDetailDescription {
@@ -35,6 +36,21 @@
   font-size: 16px;
   line-height: 150%;
   color: var(--text);
+}
+
+
+  .camperPageDetailsModalImage {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+.camperPageDetailsModalText {
+  padding-left: 6px;
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: var( --gray)
+ 
 }
 
 @media (min-width: 1440px) {
@@ -54,5 +70,13 @@
     width: 570px;
     object-position: center;
     object-fit: cover;
+    cursor: pointer;
   }
+
+  /* .camperPageDetailsModalImage {
+  display: block;
+    width: 100%
+  } */
+
+
 }
