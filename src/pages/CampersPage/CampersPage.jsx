@@ -26,15 +26,15 @@ const CampersPage = () => {
     dispatch(setPageFlag(page));
   };
 
-
- 
   useEffect(() => {
     dispatch(fetchCampers({ ...filter, limit, page }));
     if (pages === page ) {
-        toast.success('We got to the end of collection!');
+        toast.success('There are no more campers avaliable with such options');
       }
   }, [dispatch, filter, limit, page, pages]);
 
+if (error) {
+   toast.success('There are no campers avaliable with such options')} 
 
   return (
     <>
@@ -48,6 +48,9 @@ const CampersPage = () => {
               </div>
             )}
             {error && <b>{error}</b>}
+            {error && <b>There are no cars avaliable with such options
+              {/* {toast.success('There are no campers avaliable with such options')} */}
+              </b>}
             {!error &&  !isLoading &&<CampersList items={items} />}
 
             {pages > page ? (

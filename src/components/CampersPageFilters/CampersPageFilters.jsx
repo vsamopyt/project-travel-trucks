@@ -16,19 +16,10 @@ const CampersPageFilters = () => {
 
   const handleSubmit = (values, { setSubmitting }) => {
     const filter = {};
-    // for (const key in values) {
-    //   if (values[key] === false || values[key] === '') {
-    //     filter[key] = null;
-    //     // filter[key] = "";
-    //   } else {
-    //     filter[key] = values[key];
-    //   }
-    // }
 
     for (const key in values) {
-      if (values[key] === false ) {
-       
-        filter[key] = "";
+      if (values[key] === false) {
+        filter[key] = '';
       } else {
         filter[key] = values[key];
       }

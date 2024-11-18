@@ -12,10 +12,11 @@ const CamperPage = () => {
   const { id } = useParams();
   const item = useSelector(state => state.campers.item);
   const isLoading = useSelector(state => state.campers.isLoading);
+  const dispatch = useDispatch();
+
   const classLink = ({ isActive }) => {
     return clsx(css.camperPageLink, isActive && css.camperPageLinkActive);
   };
-  const dispatch = useDispatch();
 
   useEffect(() => {
     if (!item || item.id !== id) {
@@ -24,17 +25,23 @@ const CamperPage = () => {
   }, [dispatch, id, item]);
 
   if (!item || item.id !== id) {
-    return <div>Error: Camper not found</div>;
-  }
-  return (
-    <>
-      {isLoading && (
+    return (
+      <div>
         <div className="barloader">
           <BarLoader />
         </div>
-      )}
-
+        <p>Error: Camper not found</p>;
+      </div>
+    );
+  }
+  return (
+    <>
       <section className={css.camperPageSection}>
+        {isLoading && (
+          <div className="barloader">
+            <BarLoader />
+          </div>
+        )}
         <CamperPageDetails item={item} />
       </section>
 

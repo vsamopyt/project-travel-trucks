@@ -1,13 +1,27 @@
 import { Route, Routes } from 'react-router-dom';
-import HomePage from '../../pages/HomePage/HomePage';
-import CampersPage from '../../pages/CampersPage/CampersPage';
-import CamperPage from '../../pages/CamperPage/CamperPage';
-import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage';
+import { lazy, Suspense } from 'react';
+import { BarLoader } from 'react-spinners';
 import Navigation from "../Navigation/Navigation";
-import CamperPageReviews from '../CamperPageReviews/CamperPageReviews';
-import CamperPageFeatures from '../CamperPageFeatures/CamperPageFeatures';
-
 import css from './App.module.css';
+
+const HomePage = lazy(() =>
+  import('../../pages/HomePage/HomePage')
+);
+const CampersPage = lazy(() =>
+  import('../../pages/CampersPage/CampersPage')
+);
+const CamperPage = lazy(() =>
+  import('../../pages/CamperPage/CamperPage')
+);
+const NotFoundPage = lazy(() =>
+  import('../../pages/NotFoundPage/NotFoundPage')
+);
+const CamperPageReviews = lazy(() =>
+  import('../CamperPageReviews/CamperPageReviews')
+);
+const CamperPageFeatures = lazy(() =>
+  import('../CamperPageFeatures/CamperPageFeatures')
+);
 
 const App = () => {
   return (
@@ -18,6 +32,13 @@ const App = () => {
         </div>
       </header>
       <main>
+      <Suspense
+        fallback={
+          <div className="barloader">
+             <BarLoader />
+          </div>
+        }
+      >
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/catalog" element={<CampersPage />} />
@@ -27,6 +48,7 @@ const App = () => {
           </Route>
           <Route path="*" element={<NotFoundPage />}></Route>
         </Routes>
+        </Suspense>
       </main>
       <footer></footer>
     </>
