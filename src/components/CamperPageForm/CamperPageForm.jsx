@@ -11,14 +11,14 @@ const CamperPageForm = () => {
     name: Yup.string()
       .min(3, 'Too Short!')
       .max(50, 'Too Long!')
-      .required('Required'),
+      .required('Please fill in your name!'),
     email: Yup.string()
       .matches(
         /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
         'Should be like  test@gmail.com'
       )
-      .required('Required'),
-    bookingDate: Yup.date().required('Required'),
+      .required('Please fill in your email!'),
+    bookingDate: Yup.date().required('Please fill in the date!'),
     comment: Yup.string().max(60, 'Too Long!'),
   });
 

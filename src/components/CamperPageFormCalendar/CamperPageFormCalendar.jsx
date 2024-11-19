@@ -5,8 +5,6 @@ import 'react-datepicker/dist/react-datepicker.css';
 import './CamperPageFormCalendar.css';
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
-
-
 // Регистрируем новую локаль
 registerLocale('en-GB', enGB);
 
