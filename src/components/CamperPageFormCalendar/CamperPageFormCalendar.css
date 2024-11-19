@@ -1,0 +1,143 @@
+.react-datepicker {
+  border: 1px solid var(--text);
+  border-radius: 12px;
+}
+
+.react-datepicker__header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--text);
+}
+
+.react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+  border-top-right-radius: 12px;
+}
+
+.react-datepicker__navigation-icon {
+  top: 3px;
+}
+.react-datepicker__navigation-icon::before {
+  width: 12px;
+  height: 12px;
+  border-color: #475467;
+}
+.react-datepicker__current-month {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.react-datepicker__input-container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 18px;
+  margin-top: 14px;
+}
+
+.react-datepicker-wrapper {
+  display: block;
+}
+
+.react-datepicker__input-container input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: block; */
+  width: 100%;
+  padding: 18px;
+  color: var(--gray);
+  border: none;
+  background-color: var(--inputs);
+  border-radius: 12px;
+}
+
+.react-datepicker__day.react-datepicker__day--today {
+  background-color: var(--text);
+  color: var(--inputs);
+  width: 36px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.react-datepicker__day--today:hover {
+  color: var(--text);
+  border-radius: 50%;
+}
+
+.react-datepicker__month-container {
+  width: 276px;
+  font-family: var(--font-family);
+  border-radius: 12px;
+}
+
+.react-datepicker__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31px;
+  height: 31px;
+  font-size: 14px;
+}
+.react-datepicker__week {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.react-datepicker__day-names {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 6px;
+}
+.react-datepicker__day-name {
+  position: relative; /* Устанавливаем относительное позиционирование */
+  visibility: hidden; /* Скрываем оригинальный текст */
+}
+.react-datepicker__day-name::after {
+  content: ''; /* Убираем базовый контент */
+  visibility: visible; /* Отображаем только текст из `::after` */
+  position: absolute; /* Абсолютное позиционирование внутри элемента */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase; /* Преобразуем текст в верхний регистр */
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.react-datepicker__day-name:nth-child(1)::after {
+  content: 'MON'; /* Заменяем 'Mo' на 'MON' */
+}
+.react-datepicker__day-name:nth-child(2)::after {
+  content: 'TUE';
+}
+.react-datepicker__day-name:nth-child(3)::after {
+  content: 'WED';
+}
+.react-datepicker__day-name:nth-child(4)::after {
+  content: 'THU';
+}
+.react-datepicker__day-name:nth-child(5)::after {
+  content: 'FRI';
+}
+.react-datepicker__day-name:nth-child(6)::after {
+  content: 'SAT';
+}
+.react-datepicker__day-name:nth-child(7)::after {
+  content: 'SUN';
+}
+.react-datepicker__day-name {
+  position: relative; /* Устанавливаем относительное позиционирование */
+  visibility: hidden; /* Скрываем оригинальный текст */
+}

@@ -3,6 +3,7 @@ import { useId } from 'react';
 import * as Yup from 'yup';
 import clsx from 'clsx';
 import toast, { Toaster } from 'react-hot-toast';
+import CamperPageFormCalendar from '../CamperPageFormCalendar/CamperPageFormCalendar';
 import css from './CamperPageForm.module.css';
 
 const CamperPageForm = () => {
@@ -17,12 +18,13 @@ const CamperPageForm = () => {
         'Should be like  test@gmail.com'
       )
       .required('Required'),
-      bookingDate: Yup.date().required('Required'),
+    bookingDate: Yup.date().required('Required'),
     comment: Yup.string().max(60, 'Too Long!'),
   });
 
   const handleSubmit = (values, actions) => {
-   
+    console.log(values);
+
     toast.success('We got your request. Thanks a lot for choice');
     actions.resetForm();
   };
@@ -47,7 +49,8 @@ const CamperPageForm = () => {
       </p>
       <Formik
         initialValues={initialValues}
-        onSubmit={handleSubmit}camperPageFormSection
+        onSubmit={handleSubmit}
+        camperPageFormSection
         validationSchema={validationSchema}
       >
         <Form>
@@ -70,14 +73,21 @@ const CamperPageForm = () => {
             id={emailFieldId}
           />
           <ErrorMessage className={css.error} name="email" component="span" />
-          
+
           <label htmlFor={bookingDateFieldId}></label>
-          <Field
+          {/* <Field
             className={css.camperPageFormField}
             name="bookingDate"
             type="date"
             placeholder="Booking date*"
             id={bookingDateFieldId}
+          /> */}
+          <Field
+            name="bookingDate"
+            className={css.camperPageFormField}
+            placeholderText="Booking date*"
+            id={bookingDateFieldId}
+            component={CamperPageFormCalendar}
           />
           <ErrorMessage
             className={css.error}
