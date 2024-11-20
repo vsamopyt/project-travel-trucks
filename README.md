@@ -1,14 +1,26 @@
-# React + Vite
+# ![favicon](https://github.com/user-attachments/assets/37d3bd82-e2f6-4d3b-880d-0a704cd6c477) My travel camper truck
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-## Screenshoots
+My travel camper truck app is ...
 
 
-![traveldsk 1](https://github.com/user-attachments/assets/48b96c9c-d679-41bf-97af-80adf96fed2c)
+## Screenshots
 
-![551](https://github.com/user-attachments/assets/0c8d399d-f99f-4097-be60-e745eca0ad87)
-![52](https://github.com/user-attachments/assets/86b7e511-2865-4cf7-a595-432a8afae949)
+| <img src="https://github.com/user-attachments/assets/bc3e586a-fe9c-4efd-91f2-10251ef06553" width="200" /> |<img src="https://github.com/user-attachments/assets/93b467da-f9d1-4240-9479-65015a529440" width="300" /> | <img src="https://github.com/user-attachments/assets/5c810e77-9888-4f6f-a639-67debdfeaf57" width="500" /> |
+|---|---|---|
+| Home/Mobile |  Home/Tablet | Home/Desktop|
+
+
+|<img src="https://github.com/user-attachments/assets/9b0e61c4-874a-42da-813b-10c6b5f0b2c9" width="200" /> |<img src="https://github.com/user-attachments/assets/c08ee113-f7b9-404f-b5c6-cea51b14c0af" width="300" /> | <img src="https://github.com/user-attachments/assets/95fce2da-8538-49f8-a071-acb76129a645" width="500" /> |
+|---|---|---|
+| Catalog/Mobile |  Catalog/Tablet | Catalog/Desktop|
+
+
+
+|<img src="https://github.com/user-attachments/assets/008dcba8-73ed-439e-afb9-e5f5cd778158" width="200" /> |<img src="https://github.com/user-attachments/assets/5590be09-768b-4cc3-971e-fc703f916620" width="300" />| <img src="https://github.com/user-attachments/assets/ba12c456-9473-4e28-b588-5af765b25d2d" width="500" />|
+|---|---|---|
+| CamperInfo/Mobile |   CamperInfo/Tablet |  CamperInfo/Desktop|
+
+
 
 ## Built With
 ![HTL5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -34,8 +46,22 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 ![CHATGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
 
-![AXIOS](https://img.shields.io/badge/AXIOS-F24E1E)
+![MODERN-NORMALIZE](https://img.shields.io/badge/MODERN--NORMALIZE-47cf80)
+![CLSX](https://img.shields.io/badge/CLSX-1572B6)
+![REACT-DOM](https://img.shields.io/badge/REACT--DOM-20232A)
+![REACT ROUTER DOM](https://img.shields.io/badge/REACT_ROUTER_DOM-20232A)
+![REACT-REDUX](https://img.shields.io/badge/REACT--REDUX-20232A)
+[![REACT PERSIST](https://img.shields.io/badge/REACT_PERSIST-20232A)](https://www.npmjs.com/package/redux-persist)
 ![FORMIK](https://img.shields.io/badge/FORMIK-3A33D1)
+[![YUP](https://img.shields.io/badge/YUP-3A33D1)](https://www.npmjs.com/package/yup)
+![REACT-MODAL](https://img.shields.io/badge/REACT--MODAL-20232A)
+[![REACT SPINNERS](https://img.shields.io/badge/REACT_SPINNERS-20232A)](https://www.npmjs.com/package/react-spinners)
+![REACT ICONS](https://img.shields.io/badge/REACT_ICONS-5f0540)
+![REACT-HOT-TOAST](https://img.shields.io/badge/REACT_HOT_TOAST-4c3f3f)
+![REACT DATE PICKER](https://img.shields.io/badge/REACT_DATE_PICKER-5f0540)
+![DATE-FNS](https://img.shields.io/badge/DATE--FNS-5f0540)
+
+
 ## Installation
 
 To set up the Advice Generator Application locally, follow these steps:
