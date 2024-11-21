@@ -69,13 +69,13 @@ To set up the Advice Generator Application locally, follow these steps:
 1. Clone the GitHub repository to your local machine:
     
     ```
-    git clone https://github.com/0xabdulkhalid/advice-generator.git
+    git clone https://github.com/vsamopyt/project-travel-truck.git
     ```
     
 2. Navigate to the project's directory:
     
     ```
-    cd advice-generator
+    cd project-travel-truck
     ```
     
 3. Install the project's dependencies using npm:
