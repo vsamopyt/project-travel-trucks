@@ -10,8 +10,11 @@ import css from './CamperPage.module.css';
 
 const CamperPage = () => {
   const { id } = useParams();
-  const item = useSelector(state => state.campers.item);
-  const isLoading = useSelector(state => state.campers.isLoading);
+  // const item = useSelector(state => state.campers.item);
+  // const  isLoading = useSelector(state => state.campers.isLoading);
+  // const error =useSelector(state => state.campers.error);
+ const {item, isLoading, error} = useSelector(state => state.campers);
+  
   const dispatch = useDispatch();
 
   const classLink = ({ isActive }) => {
@@ -34,6 +37,8 @@ const CamperPage = () => {
       </div>
     );
   }
+
+
   return (
     <>
       <section className={css.camperPageSection}>
@@ -42,7 +47,7 @@ const CamperPage = () => {
             <BarLoader />
           </div>
         )}
-        <CamperPageDetails item={item} />
+        {!isLoading && !error &&<CamperPageDetails item={item} />}
       </section>
 
       <div

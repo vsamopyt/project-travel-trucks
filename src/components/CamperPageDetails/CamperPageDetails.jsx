@@ -149,12 +149,14 @@ const CamperPageDetails = ({ item }) => {
                 alt={`Photo #${index + 1} of camper ${name.toUpperCase()}`}
                 onClick={handleOpenModal}
                 data-img={item.original}
+                width="290"
+                height="163"
               />
             </li>
           );
         })}
       </ul>
-      
+
       <p className={css.campersPageDetailDescription}>{description}</p>
 
       <BasicModalWindow isOpen={isOpen} onClose={onClose}>

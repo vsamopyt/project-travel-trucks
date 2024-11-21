@@ -10,7 +10,7 @@ const Navigation= () => {
   return (
     <div >
       <nav className={css.navigation}>
-        <Link className={css.navigationLinkLogo} to="/">
+        <Link className={css.navigationLinkLogo} aria-label='Logo' to="/">
           <GeneralIcon 
           name ={"Logo"}
           className={css.navigationIcon}
