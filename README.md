@@ -16,7 +16,7 @@ My travel camper truck app is ...
 
 <table>
   <tr>
-    <td> <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="500" /></td>
+    <td> <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="400" /></td>
     <td> <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="100" /></td>
   </tr>
   <tr>
