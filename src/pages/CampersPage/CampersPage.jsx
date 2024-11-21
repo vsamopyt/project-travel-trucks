@@ -26,12 +26,41 @@ const CampersPage = () => {
     dispatch(setPageFlag(page));
   };
 
+  // useEffect(() => {
+  //   dispatch(fetchCampers({ ...filter, limit, page }));
+  //   if (pages === page ) {
+  //       toast.success('There are no more campers avaliable with such options');
+  //     }
+  // }, [dispatch, filter, limit, page, pages]);
+
   useEffect(() => {
     dispatch(fetchCampers({ ...filter, limit, page }));
-    if (pages === page ) {
-        toast.success('There are no more campers avaliable with such options');
-      }
-  }, [dispatch, filter, limit, page, pages]);
+   
+  }, [dispatch, filter, limit, page]);
+
+  useEffect(() => {
+    if (pages === page) {
+      toast.success('There are all avaliable campers for this request');
+    }
+  }, [pages, page]);
+
+  useEffect(() => {
+    if (items.length > 0 && items[0]?.gallery?.[0]?.original) {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = items[0].gallery[0].original;
+  
+      // Добавляем элемент <link> в <head>
+      document.head.appendChild(link);
+  
+      // Удаляем элемент после размонтирования компонента
+      return () => {
+        document.head.removeChild(link);
+      };
+    }
+  }, [items]);
+
 
 if (error) {
    toast.success('There are no campers avaliable with such options')} 
@@ -47,12 +76,10 @@ if (error) {
                 <BarLoader />
               </div>
             )}
-            {error && <b>{error}</b>}
-            {error && <b>There are no cars avaliable with such options
-              {/* {toast.success('There are no campers avaliable with such options')} */}
-              </b>}
-            {!error &&  !isLoading &&<CampersList items={items} />}
-
+            {error && <b>{error} </b>}
+            {/* {error && <b>avaliable</b>} */}
+            { !isLoading && !error &&<CampersList items={items} />}
+            {!isLoading && items.length === 0 && <p>No campers found.</p>}
             {pages > page ? (
               <button
                 className={css.campersPageButton}

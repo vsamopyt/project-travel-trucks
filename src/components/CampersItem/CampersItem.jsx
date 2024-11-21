@@ -9,7 +9,7 @@ import CampersRating from '../CampersRating/CampersRating';
 import { OptionList } from '../../constants/constants';
 import css from './CampersItem.module.css';
 
-const CampersItem = ({ item }) => {
+const CampersItem = ({ item, loading }) => {
   const { id, name, rating, reviews, location, description, price, gallery } =
     item;
   const dispatch = useDispatch();
@@ -30,7 +30,7 @@ const CampersItem = ({ item }) => {
   return (
     <div className={css.campersItemContainer}>
       <div className={css.itemContainerImage}>
-      <img className={css.itemImg} src={gallery[0].original} alt={name} loading="lazy"  width={"256"} height={"144"}/>
+      <img className={css.itemImg} src={gallery[0].original} alt={name} loading={loading}  width={"256"} height={"144"}/>
       </div>
       <div className={css.itemContainerText}>
         <h2 className={css.campersItemTitle}>{nameShort(name)}</h2>
