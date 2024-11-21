@@ -9,10 +9,9 @@ My travel camper truck app is ...
 |---|---|---|
 | Home/Mobile |  Home/Tablet | Home/Desktop|
 
-|   <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="495" /> |   ![image](https://github.com/user-attachments/assets/68c35b7c-7dc9-4ad8-914d-bcc6563b80a4)|
+|   <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="522" /> |  <img src="https://github.com/user-attachments/assets/b45a4027-3a9e-4973-b69d-4afe56e2fa6b" width="485" />|
 |---|---|
-|mobile <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app/ymgamxn5jj?form_factor=mobile">PageSpeed Insights</a>|desktop PageSpeed Insights|
-
+|mobile <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app/ymgamxn5jj?form_factor=mobile" target="_blank">PageSpeed Insights</a>|desktop  <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app/ymgamxn5jj?form_factor=desktop" target="_blank">PageSpeed Insights</a>|
 
 
 <table>
@@ -30,11 +29,19 @@ My travel camper truck app is ...
 |---|---|---|
 | Catalog/Mobile |  Catalog/Tablet | Catalog/Desktop|
 
+|   <img src="https://github.com/user-attachments/assets/f9ece8c5-5192-4c18-a89a-a779fa18953b" width="522" /> |  <img src="https://github.com/user-attachments/assets/796a9282-77f0-44f2-a2c4-21ee8eae7a6d" width="485" />|
+|---|---|
+|mobile <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app-catalog/evnhwkp7go?form_factor=mobile" target="_blank">PageSpeed Insights</a>|desktop  <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app-catalog/evnhwkp7go?form_factor=desktop" target="_blank">PageSpeed Insights</a>|
+
 
 
 |<img src="https://github.com/user-attachments/assets/008dcba8-73ed-439e-afb9-e5f5cd778158" width="200" /> |<img src="https://github.com/user-attachments/assets/5590be09-768b-4cc3-971e-fc703f916620" width="300" />| <img src="https://github.com/user-attachments/assets/ba12c456-9473-4e28-b588-5af765b25d2d" width="500" />|
 |---|---|---|
 | CamperInfo/Mobile |   CamperInfo/Tablet |  CamperInfo/Desktop|
+
+|   <img src="https://github.com/user-attachments/assets/c3103f9a-8132-4491-a032-0ed7e5772b47" width="522" /> |  <img src="https://github.com/user-attachments/assets/a89248e6-241b-4005-91c3-df7c2c649ec0" width="485" />|
+|---|---|
+|mobile <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app-catalog-1/v7uvawe5ux?form_factor=mobile" target="_blank">PageSpeed Insights</a>|desktop  <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app-catalog-1/v7uvawe5ux?form_factor=desktop" target="_blank">PageSpeed Insights</a>|
 
 
 
