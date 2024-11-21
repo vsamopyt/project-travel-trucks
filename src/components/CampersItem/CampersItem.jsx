@@ -30,7 +30,7 @@ const CampersItem = ({ item }) => {
   return (
     <div className={css.campersItemContainer}>
       <div className={css.itemContainerImage}>
-      <img className={css.itemImg} src={gallery[0].original} alt={name}  width={"256"} height={"144"}/>
+      <img className={css.itemImg} src={gallery[0].original} alt={name} loading="lazy"  width={"256"} height={"144"}/>
       </div>
       <div className={css.itemContainerText}>
         <h2 className={css.campersItemTitle}>{nameShort(name)}</h2>
@@ -50,7 +50,7 @@ const CampersItem = ({ item }) => {
             <CampersPrice price={price} />
           </span>
 
-          <button className={css.campersPageButtonHeart} type="button">
+          <button className={css.campersPageButtonHeart}  type="button" aria-label ="favourites">
             <FiHeart
               className={clsx(
                 css.campersPageIconHeart,

@@ -16,6 +16,11 @@
   padding-bottom: 24px;
 }
 
+.campersPageCatalog {
+min-height: 3094px;
+height: 100%;
+}
+
 .campersPageButton {
   display: block;
   margin-inline: auto;

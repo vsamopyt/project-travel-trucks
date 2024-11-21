@@ -1,5 +1,9 @@
 .campersListItem {
+  /* min-height: 698px;
+  height: 100%; */
+  min-width: 290px;
   width: 100%;
+
   padding: 16px;
   border: 1px solid var(--gray-light);
   border-radius: 20px;
