@@ -11,8 +11,9 @@ My travel camper truck app is ...
 
 |   <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="495" /> |   ![image](https://github.com/user-attachments/assets/68c35b7c-7dc9-4ad8-914d-bcc6563b80a4)|
 |---|---|
-|moile|desktop|
-|------|
+|mobile <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app/ymgamxn5jj?form_factor=mobile">PageSpeed Insights</a>|desktop PageSpeed Insights|
+
+
 
 <table>
   <tr>
