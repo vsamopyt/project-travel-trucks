@@ -9,6 +9,12 @@ My travel camper truck app is ...
 |---|---|---|
 | Home/Mobile |  Home/Tablet | Home/Desktop|
 
+|   <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="495" /> |   ![image](https://github.com/user-attachments/assets/68c35b7c-7dc9-4ad8-914d-bcc6563b80a4)|
+|---|---|
+|moile|desktop|
+|------|
+
+
 
 |<img src="https://github.com/user-attachments/assets/9b0e61c4-874a-42da-813b-10c6b5f0b2c9" width="200" /> |<img src="https://github.com/user-attachments/assets/c08ee113-f7b9-404f-b5c6-cea51b14c0af" width="300" /> | <img src="https://github.com/user-attachments/assets/95fce2da-8538-49f8-a071-acb76129a645" width="500" /> |
 |---|---|---|
