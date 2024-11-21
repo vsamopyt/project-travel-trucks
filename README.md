@@ -16,8 +16,8 @@ My travel camper truck app is ...
 
 <table>
   <tr>
-    <td> <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="495" /></td>
-    <td> <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="495" /></td>
+    <td> <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="500" /></td>
+    <td> <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="500" /></td>
   </tr>
   <tr>
     <td colspan="2">This is a single column spanning both</td>
