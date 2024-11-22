@@ -1,15 +1,21 @@
 # ![favicon](https://github.com/user-attachments/assets/37d3bd82-e2f6-4d3b-880d-0a704cd6c477) My travel camper truck
-## Description
+## 🖍 Description
 ### Genearl
 I would like to introduce you to the project "My travel camper truck", this project is based on one of the test projects from GoIt but has adaptability and extended functionality.
 The goal of the project is to create a frontend part of a web application for the company "TravelTrucks", which rents campers. The web application includes several pages, including the home page, the catalog page and the page of an individual camper with reviews with a booking form and a modal window for a picture gallery in the desktop version.
 ### Adaptability
 #### Mobile version
-up to 767 responsive design
+![MOBILE](https://img.shields.io/badge/Mobile-up_to_767-blue)
+![MOBILE](https://img.shields.io/badge/Responsive_design-blue)
+
 #### Tablet version
-from 768 to 1439 adaptive design
+![TABLET](https://img.shields.io/badge/Tablet-from_768_to_1439-blue)
+![TABLET](https://img.shields.io/badge/Adaptive_design-blue)
+
 #### Desktop version
-from 1440 adaptive design
+![DESKTOP](https://img.shields.io/badge/Desktop-from_1440-blue)
+![DESKTOP](https://img.shields.io/badge/Adaptive_design-blue)
+
 ### Мain Pages
 #### Header:
 is shared and contains logo and navigation block
@@ -19,12 +25,9 @@ contains a banner with the main call to action.
 a page that displays all available vehicles with the ability to filter by certain criteria (location, type of vehicle, availability of air conditioning, kitchen, etc.), the ability to add a camper to favorites and the button for loading new cards.
 Individual camper page: a page with a detailed description of the selected camper, a photo gallery, user reviews, a booking form and mogal window for desktop version
 ### Routing:
-#### Home page. 
-/ 
-#### Catalog page
-/catalog  .
-#### Individual camper page
-/catalog/:id
+![MOBILE](https://img.shields.io/badge/Home_page-/-blue)
+![MOBILE](https://img.shields.io/badge/Catalog_page-/catalog-blue)
+![MOBILE](https://img.shields.io/badge/Individual_camper_page-/catalog/:id-blue)
 ### Pagination
 on the catalog page there is a "Load More" button, when clicked, 4 additional vehicle cards are loaded taking into account the selected filters,
 
