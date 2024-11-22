@@ -19,9 +19,12 @@ contains a banner with the main call to action.
 a page that displays all available vehicles with the ability to filter by certain criteria (location, type of vehicle, availability of air conditioning, kitchen, etc.), the ability to add a camper to favorites and the button for loading new cards.
 Individual camper page: a page with a detailed description of the selected camper, a photo gallery, user reviews, a booking form and mogal window for desktop version
 ### Routing:
-#### / - Home page.
-#### /catalog - Catalog page.
-#### /catalog/:id- Individual camper page.
+#### Home page. 
+/ 
+#### Catalog page
+/catalog  .
+#### Individual camper page
+/catalog/:id
 ### Pagination
 on the catalog page there is a "Load More" button, when clicked, 4 additional vehicle cards are loaded taking into account the selected filters,
 
