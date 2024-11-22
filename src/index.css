@@ -95,14 +95,13 @@ button:active {
   justify-content: center;
 }
 
-.icons {
+n.icons {
   width: 16px;
   height: 16px;
   stroke: black;
 }
 
 .container {
-  max-width: 320px;
   max-width: 767px;
   width: 100%;
   padding-inline: 15px;

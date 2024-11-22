@@ -1,11 +1,12 @@
 .campersPageAside {
   min-width: 290px;
   width: 100%;
-  min-height: 1162px;
+  /* min-height: 1162px; */
   height:100%;
 }
 
 .campersPageContainer {
+  min-height: 810px;
   display: flex;
   flex-direction: column;
   gap: 68px;
@@ -17,7 +18,8 @@
 }
 
 .campersPageCatalog {
-min-height: 3094px;
+/* min-height: 3094px; */
+min-height: 810px;
 height: 100%;
 }
 
@@ -40,15 +42,22 @@ height: 100%;
   }
 
   .campersPageContainer {
+    min-height: 60vh;
+    height:100%;
     flex-direction: row;
   }
   .campersPageAside {
     max-width: 360px;
     width: 100%;
+    min-height: 950px;
+    height:100%
   }
   .campersPageCatalog {
+
     max-width: 880px;
     width: 100%;
+    min-height: 426px;
+height: 100%;
     order: 1;
   }
 

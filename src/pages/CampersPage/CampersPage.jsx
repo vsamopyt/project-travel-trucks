@@ -45,6 +45,11 @@ const CampersPage = () => {
   }, [pages, page]);
 
   useEffect(() => {
+    if (error) {
+      toast.success('There are no campers avaliable with such options')} 
+  }, [error]);
+
+  useEffect(() => {
     if (items.length > 0 && items[0]?.gallery?.[0]?.original) {
       const link = document.createElement('link');
       link.rel = 'preload';
@@ -62,8 +67,8 @@ const CampersPage = () => {
   }, [items]);
 
 
-if (error) {
-   toast.success('There are no campers avaliable with such options')} 
+// if (error) {
+//    toast.success('There are no campers avaliable with such options')} 
 
   return (
     <>
