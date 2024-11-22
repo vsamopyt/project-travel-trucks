@@ -37,7 +37,8 @@ on the catalog page there is a "Load More" button, when clicked, 4 additional ve
 
 |   <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="522" /> |  <img src="https://github.com/user-attachments/assets/b45a4027-3a9e-4973-b69d-4afe56e2fa6b" width="485" />|
 |---|---|
-|mobile <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app/ymgamxn5jj?form_factor=mobile" target="_blank">PageSpeed Insights</a>|desktop  <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app/ymgamxn5jj?form_factor=desktop" target="_blank">PageSpeed Insights</a>|
+|[![MOBILE](https://img.shields.io/badge/Mobile-PageSpeed_Insights-blue)](https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app/ymgamxn5jj?form_factor=mobile)|[![DESKTOP](https://img.shields.io/badge/Desktop-PageSpeed_Insights-blue)](https://pagespeed.web.dev/analysis/https-project-travel-trucks-vercel-app/e176c4fbga?form_factor=desktop)|
+
 
 
 <!-- <table>
@@ -51,14 +52,13 @@ on the catalog page there is a "Load More" button, when clicked, 4 additional ve
 </table> -->
 
 
-|<img src="https://github.com/user-attachments/assets/9b0e61c4-874a-42da-813b-10c6b5f0b2c9" width="200" /> |<img src="https://github.com/user-attachments/assets/c08ee113-f7b9-404f-b5c6-cea51b14c0af" width="300" /> | <img src="https://github.com/user-attachments/assets/95fce2da-8538-49f8-a071-acb76129a645" width="500" /> |
+|<img src="https://github.com/user-attachments/assets/9b0e61c4-874a-42da-813b-10c6b5f0b2c9" width="200" /> |<img src="https://github.com/user-attachments/assets/f96d7505-f6e4-42ef-87f6-5de18cda60bd" width="300" /> | <img src="https://github.com/user-attachments/assets/95fce2da-8538-49f8-a071-acb76129a645" width="500" /> |
 |---|---|---|
 | Catalog/Mobile |  Catalog/Tablet | Catalog/Desktop|
 
-|   <img src="https://github.com/user-attachments/assets/f9ece8c5-5192-4c18-a89a-a779fa18953b" width="522" /> |  <img src="https://github.com/user-attachments/assets/796a9282-77f0-44f2-a2c4-21ee8eae7a6d" width="485" />|
+|   <img src="https://github.com/user-attachments/assets/602cb419-ae8d-4491-bb39-2541880b9f65" width="522" /> |  <img src="https://github.com/user-attachments/assets/3c793f05-6482-421b-a669-0fe16a40a699" width="485" />|
 |---|---|
-|mobile <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app-catalog/evnhwkp7go?form_factor=mobile" target="_blank">PageSpeed Insights</a>|desktop  <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app-catalog/evnhwkp7go?form_factor=desktop" target="_blank">PageSpeed Insights</a>|
-
+|[![MOBILE](https://img.shields.io/badge/Mobile-PageSpeed_Insights-blue)](https://pagespeed.web.dev/analysis/https-project-travel-trucks-vercel-app-catalog/c7dexkpwt0?form_factor=mobile)|[![DESKTOP](https://img.shields.io/badge/Desktop-PageSpeed_Insights-blue)](https://pagespeed.web.dev/analysis/https-project-travel-trucks-vercel-app-catalog/lou2kgtkpr?form_factor=desktop)|
 
 
 |<img src="https://github.com/user-attachments/assets/008dcba8-73ed-439e-afb9-e5f5cd778158" width="200" /> |<img src="https://github.com/user-attachments/assets/5590be09-768b-4cc3-971e-fc703f916620" width="300" />| <img src="https://github.com/user-attachments/assets/ba12c456-9473-4e28-b588-5af765b25d2d" width="500" />|
@@ -67,8 +67,7 @@ on the catalog page there is a "Load More" button, when clicked, 4 additional ve
 
 |   <img src="https://github.com/user-attachments/assets/c3103f9a-8132-4491-a032-0ed7e5772b47" width="522" /> |  <img src="https://github.com/user-attachments/assets/a89248e6-241b-4005-91c3-df7c2c649ec0" width="485" />|
 |---|---|
-|mobile <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app-catalog-1/v7uvawe5ux?form_factor=mobile" target="_blank">PageSpeed Insights</a>|desktop  <a href="https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app-catalog-1/v7uvawe5ux?form_factor=desktop" target="_blank">PageSpeed Insights</a>|
-
+|[![MOBILE](https://img.shields.io/badge/Mobile-PageSpeed_Insights-blue)](https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app-catalog-1/v7uvawe5ux?form_factor=mobile)|[![DESKTOP](https://img.shields.io/badge/Desktop-PageSpeed_Insights-blue)](https://pagespeed.web.dev/analysis/https-project-travel-trucks-git-main-viktor-ss-projects-vercel-app-catalog-1/v7uvawe5ux?form_factor=desktop)|
 
 
 ## 🚀 Built With
