@@ -3,7 +3,7 @@
 My travel camper truck app is ...
 
 
-## Screenshots
+## 💻 Screenshots
 
 | <img src="https://github.com/user-attachments/assets/bc3e586a-fe9c-4efd-91f2-10251ef06553" width="200" /> |<img src="https://github.com/user-attachments/assets/93b467da-f9d1-4240-9479-65015a529440" width="300" /> | <img src="https://github.com/user-attachments/assets/5c810e77-9888-4f6f-a639-67debdfeaf57" width="500" /> |
 |---|---|---|
@@ -45,7 +45,7 @@ My travel camper truck app is ...
 
 
 
-## Built With
+## 🚀 Built With
 ![HTL5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
@@ -85,8 +85,8 @@ My travel camper truck app is ...
 ![REACT DATE PICKER](https://img.shields.io/badge/REACT_DATE_PICKER-5f0540)
 ![DATE-FNS](https://img.shields.io/badge/DATE--FNS-5f0540)
 
-https://www.figma.com/design/6vTbzaB3EPgOreQz2jOJJe/Campers?node-id=0-1
-## Installation
+
+## 🔌 Installation
 
 To set up the Advice Generator Application locally, follow these steps:
 
@@ -116,7 +116,7 @@ To set up the Advice Generator Application locally, follow these steps:
     
 5. The build files can be found on `dist` (distribution) directory.
 
-## API Reference
+## ⚡ API Reference
 
 #### Get all items
 
@@ -142,12 +142,14 @@ To set up the Advice Generator Application locally, follow these steps:
 
 
 
-## 🔗 Links and Contacts
+## 🔗 Links and Contacts 
 [![LINKEDIN](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)
 [![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vsamopyt)
 [![TELEGRAM](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/vsamopiat)
 [![EMAIL](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](v.samopyt14@gmail.com)
 
-<a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
-  <img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="FIGMA">
-</a>
+## 📝 License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
