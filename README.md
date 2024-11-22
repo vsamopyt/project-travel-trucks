@@ -1,6 +1,29 @@
 # ![favicon](https://github.com/user-attachments/assets/37d3bd82-e2f6-4d3b-880d-0a704cd6c477) My travel camper truck
-
-My travel camper truck app is ...
+## Description
+### Genearl
+I would like to introduce you to the project "My travel camper truck", this project is based on one of the test projects from GoIt but has adaptability and extended functionality.
+The goal of the project is to create a frontend part of a web application for the company "TravelTrucks", which rents campers. The web application includes several pages, including the home page, the catalog page and the page of an individual camper with reviews with a booking form and a modal window for a picture gallery in the desktop version.
+### Adaptability
+#### Mobile version
+up to 767 responsive design
+#### Tablet version
+from 768 to 1439 adaptive design
+#### Desktop version
+from 1440 adaptive design
+### Мain Pages
+#### Header:
+is shared and contains logo and navigation block
+#### Home page:
+contains a banner with the main call to action.
+#### Catalog:
+a page that displays all available vehicles with the ability to filter by certain criteria (location, type of vehicle, availability of air conditioning, kitchen, etc.), the ability to add a camper to favorites and the button for loading new cards.
+Individual camper page: a page with a detailed description of the selected camper, a photo gallery, user reviews, a booking form and mogal window for desktop version
+### Routing:
+#### / - Home page.
+#### /catalog - Catalog page.
+#### /catalog/:id- Individual camper page.
+### Pagination
+on the catalog page there is a "Load More" button, when clicked, 4 additional vehicle cards are loaded taking into account the selected filters,
 
 
 ## 💻 Screenshots
@@ -76,6 +99,7 @@ My travel camper truck app is ...
 ![REACT ROUTER DOM](https://img.shields.io/badge/REACT_ROUTER_DOM-20232A)
 ![REACT-REDUX](https://img.shields.io/badge/REACT--REDUX-20232A)
 [![REACT PERSIST](https://img.shields.io/badge/REACT_PERSIST-20232A)](https://www.npmjs.com/package/redux-persist)
+![AXIOS](https://img.shields.io/badge/AXIOS-CB3837)
 ![FORMIK](https://img.shields.io/badge/FORMIK-3A33D1)
 [![YUP](https://img.shields.io/badge/YUP-3A33D1)](https://www.npmjs.com/package/yup)
 ![REACT-MODAL](https://img.shields.io/badge/REACT--MODAL-20232A)
