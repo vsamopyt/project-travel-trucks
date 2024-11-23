@@ -12,9 +12,9 @@ export const FilterCheckboxes = [
   ];
 
   export const FilterRadioForm = [
-    {name:"form", value:"alcove", label:"alcove"} ,
-    {name:'form', value:"panelTruck",  label:"van"} ,
-    {name:'form', value:'fullyIntegrated', label:"vfully Integrated"} ,
+    {name:"form", value:"alcove", label:"Alcove"} ,
+    {name:'form', value:"panelTruck",  label:"Van"} ,
+    {name:'form', value:'fullyIntegrated', label:"Fully Integrated"} ,
      
    ];
 
