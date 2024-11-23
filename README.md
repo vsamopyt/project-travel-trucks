@@ -1,9 +1,9 @@
 # ![favicon](https://github.com/user-attachments/assets/37d3bd82-e2f6-4d3b-880d-0a704cd6c477) My travel camper truck
 ## 🖍 Description
-### Genearl
+### General
 I would like to introduce you to the project "My travel camper truck", this project is based on one of the test projects from GoIt but has adaptability and extended functionality.
 The goal of the project is to create a frontend part of a web application for the company "TravelTrucks", which rents campers. The web application includes several pages, including the home page, the catalog page and the page of an individual camper with reviews with a booking form and a modal window for a picture gallery in the desktop version.
-### Adaptability
+### Web design
 #### Mobile version
 ![MOBILE](https://img.shields.io/badge/Mobile-up_to_767-blue)
 ![MOBILE](https://img.shields.io/badge/Responsive_design-blue)
@@ -36,7 +36,7 @@ on the catalog page there is a "Load More" button, when clicked, 4 additional ve
 
 | <img src="https://github.com/user-attachments/assets/bc3e586a-fe9c-4efd-91f2-10251ef06553" width="200" /> |<img src="https://github.com/user-attachments/assets/93b467da-f9d1-4240-9479-65015a529440" width="300" /> | <img src="https://github.com/user-attachments/assets/5c810e77-9888-4f6f-a639-67debdfeaf57" width="500" /> |
 |---|---|---|
-| Home/Mobile |  Home/Tablet | Home/Desktop|
+| ![MOBILE](https://img.shields.io/badge/Home-Mobile-blue) |  ![MOBILE](https://img.shields.io/badge/Home-Tablet-blue) |  ![MOBILE](https://img.shields.io/badge/Home-Desktop-blue)|
 
 |   <img src="https://github.com/user-attachments/assets/609e1060-db3c-4ef8-ab2a-46a3512a604b" width="522" /> |  <img src="https://github.com/user-attachments/assets/b45a4027-3a9e-4973-b69d-4afe56e2fa6b" width="485" />|
 |---|---|
@@ -57,7 +57,7 @@ on the catalog page there is a "Load More" button, when clicked, 4 additional ve
 
 |<img src="https://github.com/user-attachments/assets/9b0e61c4-874a-42da-813b-10c6b5f0b2c9" width="200" /> |<img src="https://github.com/user-attachments/assets/f96d7505-f6e4-42ef-87f6-5de18cda60bd" width="300" /> | <img src="https://github.com/user-attachments/assets/95fce2da-8538-49f8-a071-acb76129a645" width="500" /> |
 |---|---|---|
-| Catalog/Mobile |  Catalog/Tablet | Catalog/Desktop|
+| ![MOBILE](https://img.shields.io/badge/Catalog-Mobile-blue) |  ![MOBILE](https://img.shields.io/badge/Catalog-Tablet-blue) |  ![MOBILE](https://img.shields.io/badge/Catalog-Desktop-blue)|
 
 |   <img src="https://github.com/user-attachments/assets/602cb419-ae8d-4491-bb39-2541880b9f65" width="522" /> |  <img src="https://github.com/user-attachments/assets/3c793f05-6482-421b-a669-0fe16a40a699" width="485" />|
 |---|---|
@@ -66,7 +66,7 @@ on the catalog page there is a "Load More" button, when clicked, 4 additional ve
 
 |<img src="https://github.com/user-attachments/assets/008dcba8-73ed-439e-afb9-e5f5cd778158" width="200" /> |<img src="https://github.com/user-attachments/assets/5590be09-768b-4cc3-971e-fc703f916620" width="300" />| <img src="https://github.com/user-attachments/assets/ba12c456-9473-4e28-b588-5af765b25d2d" width="500" />|
 |---|---|---|
-| CamperInfo/Mobile |   CamperInfo/Tablet |  CamperInfo/Desktop|
+| ![MOBILE](https://img.shields.io/badge/CamperInfo-Mobile-blue) |  ![MOBILE](https://img.shields.io/badge/CamperInfo-Tablet-blue) |  ![MOBILE](https://img.shields.io/badge/CamperInfo-Desktop-blue)|
 
 |   <img src="https://github.com/user-attachments/assets/c3103f9a-8132-4491-a032-0ed7e5772b47" width="522" /> |  <img src="https://github.com/user-attachments/assets/a89248e6-241b-4005-91c3-df7c2c649ec0" width="485" />|
 |---|---|
@@ -156,8 +156,34 @@ To set up the Advice Generator Application locally, follow these steps:
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `page` | `string` | **Required**. Number of page|
-| `limit` | `string` | **Required**. Limit of itemson the Page|
+| `limit` | `string` | **Required**. Limit of items on GET request|
+| `location` | `string` | **Filter**. Input text|
+| `AC` | `boolean` | **Filter**. Checkbox|
+| `transmission` | `string` | **Filter**. Checkbox, "automatic"|
+| `kitchen` | `boolean` | **Filter**. Checkbox|
+| `bathroom` | `boolean` | **Filter**. Checkbox|
+| `TV` | `boolean` | **Filter**. Checkbox|
+| `water` | `boolean` | **Filter**. Checkbox|
+| `gas` | `boolean` | **Filter**. Checkbox|
+| `radio` | `boolean` | **Filter**. Checkbox|
+| `refrigerator` | `boolean` | **Filter**. Checkbox|
+| `microwave,` | `boolean` | **Filter**. Checkbox|
+| `form` | `string` | **Filter**. Radio, "alcove", "panelTruck", "fullyIntegrated  |
 
+location,
+      AC,
+      transmission,
+      kitchen,
+      bathroom,
+      TV,
+      water,
+      gas,
+      radio,radio
+      refrigerator,
+      microwave,
+      form,
+      limit,
+      page,
 #### Get item
 
 ```http
