@@ -2,7 +2,7 @@
 ## 🖍 Description
 ### General
 I would like to introduce you to the project "My travel camper truck", this project is based on one of the test projects from GoIt but has adaptability and extended functionality.
-The goal of the project is to create a frontend part of a web application for the company "TravelTrucks", which rents campers. The web application includes several pages, including the home page, the catalog page and the page of an individual camper with reviews with a booking form and a modal window for a picture gallery in the desktop version.
+The goal of the project is to create a frontend part of a web application for the company "TravelTrucks", which rents campers. The web application includes several pages: the home page, the catalog page and the page of an individual camper with reviews with a booking form and a modal window for a picture gallery in the desktop version.
 ### Web design
 #### Mobile version
 ![MOBILE](https://img.shields.io/badge/Mobile-up_to_767-blue)
